@@ -1,0 +1,97 @@
+---
+description: Permanent frontend development rules for EUVisaAdvice Academy (Next.js, TypeScript, Tailwind, Stitch designs)
+alwaysApply: true
+---
+
+# EUVisaAdvice Academy - Frontend Rules
+
+Scope: frontend only. No backend, API, or database work unless explicitly requested.
+
+## Stack (planned, from `gemini.md` and the sibling `euvisaadvice` app)
+- Next.js 16 (App Router), React 19, TypeScript (strict), Tailwind CSS v4.
+- Path alias `@/*` -> `./src/*`.
+- `euacademy/` has no app code yet. When scaffolding, confirm the stack with the user, then follow these rules and the framework defaults.
+- Do not add dependencies without a clear need. Tell the user when you add one.
+
+## 1. Coding standards
+- TypeScript everywhere. No `any` (use `unknown` + narrowing, or proper types). No `@ts-ignore` without a comment explaining why.
+- Naming: components/types `PascalCase`; hooks `useThing`; functions/variables `camelCase`; constants `UPPER_SNAKE_CASE`; component files `PascalCase.tsx`; non-component files and route folders `kebab-case`.
+- Server Components by default. Add `"use client"` only when state, effects, or browser APIs are needed, and push it to the smallest leaf component.
+- Handle loading, empty, and error states for every data-driven view (`loading.tsx`, `error.tsx`, `not-found.tsx` where it fits).
+- Use `next/image`, `next/link`, and `next/font` instead of raw `<img>`, `<a>`, and font links.
+- Accessibility: semantic HTML, labels for inputs, visible focus states, alt text, keyboard-operable controls.
+- Keep it simple. No speculative abstractions, no dead code, no commented-out code, no stray `console.log`.
+
+## 2. Project structure (`src/`)
+```
+src/
+  app/                  # routes, layouts, loading/error files only; keep pages thin
+    (marketing)/        # public: marketplace, course details, sales page
+    (student)/          # dashboard, lesson players, quiz, payment success
+    (studio)/           # admin: dashboard, courses, curriculum builder, uploads, students
+  components/
+    ui/                 # primitives: Button, Card, Input, Badge, Accordion, ProgressBar
+    layout/             # Navbar, Footer, Sidebar, page shells
+    <feature>/          # course/, player/, quiz/, studio/ ... feature-specific components
+  hooks/                # reusable hooks
+  lib/                  # utilities and helpers (pure functions)
+  services/             # data access / API client wrappers (mock data lives here until a backend exists)
+  types/                # shared TypeScript types
+  constants/            # shared constants and config
+  styles/               # global CSS and theme tokens
+public/                 # static assets
+```
+- Route groups and folder names are suggestions. Follow Next.js conventions and keep nesting shallow.
+- UI components must not fetch data or hold business logic. Put that in hooks, `services/`, or server code.
+- Co-locate a component's private subcomponents/types with it. Move anything used by 2+ features to `components/ui` or `components/<shared>`.
+
+## 3. Component reusability
+- Before creating a component, search `src/components` for one to reuse or extend (props, variants, composition, `children`).
+- One component per file, with a single, focused responsibility. Never define several independent components in one file.
+- Single source of truth: fix or change a shared component in its original file. Never copy it, fork it per page, or patch it locally.
+- Create a page-specific variant only when the requirements genuinely differ. Prefer a `variant` or `size` prop first.
+- Repeated UI (cards, stat tiles, lesson rows, status badges, tables, form fields) must be a shared component.
+
+## 4. File size
+- Keep every source file under 300 lines (a ceiling, not a target).
+- Near the limit, extract components, hooks, utilities, types, or constants.
+- Go over only when splitting would hurt readability or break a framework convention. Add a short comment at the top of the file explaining why.
+- Don't split into tiny files for the sake of it.
+
+## 5. Stitch designs are the source of truth
+- Stitch project: `projects/14608643000741593592` ("Legal Course Platform UI"), https://stitch.withgoogle.com/projects/14608643000741593592
+- Stitch MCP server `stitch` is configured in `.cursor/mcp.json` (local only, gitignored; never commit the API key).
+- Before building any screen: fetch its screen, screenshot, and HTML/code from Stitch via the MCP (`list_screens`, `get_screen`) and inspect it. Do not work from memory.
+- Match the design pixel-for-pixel: layout, dimensions, spacing, padding, margins, typography, font weights, colors, borders, shadows, radii, alignment, icon placement, image proportions.
+- Do not invent UI, change layouts, or swap in generic components when Stitch specifies the look.
+- Preserve the design across breakpoints (mobile, tablet, desktop). Where Stitch only shows desktop, follow the design system's mobile tokens (`display-hero-mobile`, `margin-mobile`, ...) and say what you assumed.
+- If a detail is unclear or an asset is missing, stop and flag it. Do not guess.
+- Known screens (all desktop): Courses Marketplace; Course Details & Sales Page; Course Overview & Curriculum; Student Dashboard - My Learning; Video Lesson Player; Text & Audio Lesson Player; Knowledge-Check Quiz; Payment Success; Studio: Admin Dashboard & Analytics, Course Management & Catalog, Create New Course, Curriculum Builder & Lesson Editor, Topic-Wise Video Upload, Student Management & Transactions; plus the overall "Academy & Studio Management System" overview.
+
+### Design tokens ("Sovereign Legal Academy", dark theme)
+Re-read the full design system from Stitch (`get_project` -> `designTheme.designMd`) when in doubt. Core values:
+- Font: Plus Jakarta Sans (all text); JetBrains Mono for code labels. Base radius `0.5rem` (sm `0.25`, md `0.75`, lg `1`, xl `1.5`).
+- Backgrounds: `surface-base #070A10`, `background #0f131c`, `surface-level-1 #111722`, `surface-level-2 #151C28`, `surface-elevated #1A2332`.
+- Gold: `primary-container #D9A441`, `gold-hover #E4B44F`, `gold-highlight #F0C264`, `gold-hairline rgba(218,164,65,.22)`, `gold-subtle-fill rgba(217,164,65,.08)`.
+- Text: `#FFFFFF` primary, `#A1A7B4` secondary, `#6B7280` muted. Border: `#222B3A`.
+- Status: success `#10B981`, warning `#F59E0B`, danger `#EF4444` (each with a 12% background).
+- Type scale: display-hero 3.5rem/800, headline-lg 2.5rem/700, headline-md 1.75rem/600, headline-sm 1.25rem/600, title-card 1.125rem/600, body-default 0.9375rem, body-muted 0.875rem, label-caps 0.6875rem/700 with 0.12em tracking.
+- Spacing: gutter 1.5rem, margin 2rem (desktop 3rem, mobile 1rem), steps 0.25 / 0.5 / 0.75 / 1 / 1.5 / 2 / 3 / 4rem.
+- Borders are 1px, except the active curriculum rail (`3px solid #D9A441`).
+
+## 6. Styling
+- Tailwind v4 utilities with design tokens defined once in global CSS via `@theme` (e.g. `src/styles/globals.css`). Use token-based classes (`bg-surface-level-2`, `text-text-secondary`), not raw hex values in components.
+- No inline `style` except for truly dynamic values (e.g. a progress width). No `!important`. No duplicated CSS.
+- Merge conditional classes with a single helper (e.g. `cn()` in `lib/`). Keep styles scoped to the component.
+- Shared components get predictable defaults and accept `className` for safe overrides.
+
+## 7. Workflow for every frontend task
+1. Inspect the existing implementation first.
+2. Find reusable components and patterns before creating new ones.
+3. Follow the existing structure and conventions.
+4. Keep existing behavior unless a change is asked for.
+5. Make the smallest change that does the job.
+6. When a shared component changes, check every place that uses it.
+7. Compare the result with the Stitch screen (screenshot) before calling it done.
+8. Check for duplication and any file over 300 lines.
+9. Once the project has them, run lint, type check (`tsc --noEmit`), and build. Report results honestly.
