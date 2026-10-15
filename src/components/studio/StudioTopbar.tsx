@@ -1,28 +1,36 @@
 import { Icon } from "@/components/ui/Icon";
 
-export function StudioTopbar() {
+export function StudioTopbar({ onToggleSidebar }: { onToggleSidebar?: () => void }) {
   return (
-    <header className="fixed top-0 left-[280px] right-0 h-16 bg-surface-level-1/90 backdrop-blur-xl z-40 shadow-[0_1px_8px_rgba(0,0,0,0.5)] flex items-center justify-between px-space-lg">
-      <div className="flex items-center gap-space-md flex-1 max-w-2xl">
+    <header className="fixed top-0 left-0 lg:left-[280px] right-0 h-16 bg-surface-level-1/90 backdrop-blur-xl z-40 shadow-[0_1px_8px_rgba(0,0,0,0.5)] flex items-center justify-between px-3 sm:px-space-lg transition-all duration-300">
+      <div className="flex items-center gap-2 sm:gap-space-md flex-1 max-w-2xl min-w-0">
+        <button
+          aria-label="Toggle Studio navigation"
+          className="lg:hidden p-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-surface-level-2 transition-colors cursor-pointer flex-shrink-0"
+          onClick={onToggleSidebar}
+          type="button"
+        >
+          <Icon className="text-[22px]" name="menu" />
+        </button>
         <div className="relative w-full">
           <Icon className="absolute left-3 top-1/2 -translate-y-1/2 text-text-muted text-[18px]" name="search" />
           <input
             aria-label="Search studio"
-            className="w-full bg-surface-container-low text-text-primary placeholder-text-muted pl-9 pr-space-md py-1.5 rounded-lg font-body-default text-body-default focus:outline-none focus:ring-1 focus:ring-primary shadow-inner"
-            placeholder="Search applicants, dossiers, courses, transactions..."
+            className="w-full bg-surface-container-low text-text-primary placeholder-text-muted pl-9 pr-space-md py-1.5 rounded-lg font-body-default text-body-default focus:outline-none focus:ring-1 focus:ring-primary shadow-inner text-xs sm:text-sm"
+            placeholder="Search applicants, dossiers, courses..."
             type="text"
           />
         </div>
-        <div className="hidden xl:flex items-center gap-space-xs bg-surface-level-2 px-space-sm py-1.5 rounded-lg whitespace-nowrap">
+        <div className="hidden xl:flex items-center gap-space-xs bg-surface-level-2 px-space-sm py-1.5 rounded-lg whitespace-nowrap flex-shrink-0">
           <span className="w-2 h-2 rounded-full bg-tertiary" />
           <span className="font-label-caps text-label-caps text-text-secondary uppercase">Sync: Active</span>
           <span className="font-label-code text-label-code text-text-muted">(BAMF / Auslandsportal Q4 2024)</span>
         </div>
       </div>
-      <div className="flex items-center gap-space-md ml-space-md">
+      <div className="flex items-center gap-2 sm:gap-space-md ml-2 sm:ml-space-md flex-shrink-0">
         <button
           aria-label="Notifications"
-          className="relative p-2 rounded-lg hover:bg-surface-level-2 text-on-surface-variant hover:text-on-surface transition-colors"
+          className="relative p-2 rounded-lg hover:bg-surface-level-2 text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer"
           type="button"
         >
           <Icon className="text-[22px]" name="notifications" />

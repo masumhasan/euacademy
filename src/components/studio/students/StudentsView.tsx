@@ -46,7 +46,7 @@ export function StudentsView({ initialTab = "students" }: { initialTab?: Student
   }
 
   return (
-    <div className="relative w-full px-space-lg py-space-md">
+    <div className="relative w-full px-4 sm:px-space-lg py-space-md">
       <div className="absolute -top-12 left-1/4 w-96 h-48 bg-primary/5 rounded-full blur-3xl pointer-events-none -z-10" />
       <div className="absolute -top-6 right-1/4 w-80 h-40 bg-tertiary/5 rounded-full blur-3xl pointer-events-none -z-10" />
       <StudentsHeader />

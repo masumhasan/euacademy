@@ -1,7 +1,5 @@
 import Link from "next/link";
 import { Icon } from "@/components/ui/Icon";
-import { cn } from "@/lib/cn";
-import { BUILDER_TABS } from "@/constants/mock/curriculumBuilder";
 import { ROUTES } from "@/constants/routes";
 
 interface CurriculumHeaderProps {
@@ -11,8 +9,8 @@ interface CurriculumHeaderProps {
 
 export function CurriculumHeader({ title, previewHref }: CurriculumHeaderProps) {
   return (
-    <div className="bg-surface-level-1 px-space-lg py-space-md shadow-md">
-      <div className="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md pb-space-sm">
+    <div className="bg-surface-level-1 px-4 sm:px-space-lg py-space-md shadow-md border-b border-border-neutral">
+      <div className="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md">
         <div className="flex flex-col gap-space-2xs min-w-0">
           <div className="flex items-center gap-space-xs text-text-muted font-body-muted text-body-muted">
             <Link className="hover:text-primary transition-colors" href={ROUTES.studio.courses}>
@@ -54,34 +52,6 @@ export function CurriculumHeader({ title, previewHref }: CurriculumHeaderProps) 
             <span>Publish Statutory Update</span>
           </button>
         </div>
-      </div>
-      <div className="flex items-center gap-space-xs overflow-x-auto pt-space-xs -mb-space-md">
-        {BUILDER_TABS.map((tab) => (
-          <button
-            key={tab.label}
-            aria-current={tab.active ? "page" : undefined}
-            className={cn(
-              "px-space-md py-2.5 rounded-t-lg font-label-interactive text-label-interactive flex items-center gap-2",
-              tab.active
-                ? "bg-surface-base text-primary shadow-inner"
-                : "text-text-muted hover:text-on-surface hover:bg-surface-container-high/40 transition-colors",
-            )}
-            type="button"
-          >
-            <Icon className="text-[18px]" name={tab.icon} />
-            <span>{tab.label}</span>
-            {tab.badge && (
-              <span
-                className={cn(
-                  "px-1.5 py-0.5 rounded font-label-code text-label-code",
-                  tab.active ? "bg-primary/20 text-primary" : "bg-surface-container-high text-text-secondary",
-                )}
-              >
-                {tab.badge}
-              </span>
-            )}
-          </button>
-        ))}
       </div>
     </div>
   );
