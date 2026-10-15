@@ -17,7 +17,6 @@ export const ROUTES = {
     curriculum: (id: string) => `/studio/courses/${id}/curriculum`,
     upload: (id: string) => `/studio/courses/${id}/upload`,
     students: "/studio/students",
-    transactions: "/studio/transactions",
     settings: "/studio/settings",
   },
 } as const;

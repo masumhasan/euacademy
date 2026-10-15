@@ -70,8 +70,8 @@ export function TransactionsTable() {
       </div>
       <div className="mt-space-md pt-space-xs border-t border-border-neutral/60 flex items-center justify-between text-xs font-label-code text-text-muted">
         <span>Showing latest 4 of 846 ledger items</span>
-        <Link className="text-primary hover:underline flex items-center gap-1" href={ROUTES.studio.transactions}>
-          <span>Open Payoneer Audit Ledger</span>
+        <Link className="text-primary hover:underline flex items-center gap-1" href={ROUTES.studio.students}>
+          <span>Open Student &amp; Escrow Registry</span>
           <Icon className="text-[14px]" name="arrow_forward" />
         </Link>
       </div>

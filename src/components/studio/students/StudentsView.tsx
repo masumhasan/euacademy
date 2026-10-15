@@ -22,7 +22,7 @@ function matchesQuery(student: Student, query: string): boolean {
   return [student.name, student.email, student.detail.reference].some((value) => value.toLowerCase().includes(needle));
 }
 
-export function StudentsView({ initialTab }: { initialTab: StudentsTab }) {
+export function StudentsView({ initialTab = "students" }: { initialTab?: StudentsTab } = {}) {
   const tab = initialTab;
   const [query, setQuery] = useState("");
   const [pathway, setPathway] = useState<PathwayFilter>("all");

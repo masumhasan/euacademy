@@ -40,12 +40,6 @@ export const STUDIO_NAV: StudioNavItem[] = [
     isActive: (pathname) => pathname.startsWith(ROUTES.studio.students),
   },
   {
-    label: "Transactions & Payoneer",
-    icon: "credit_card",
-    href: ROUTES.studio.transactions,
-    isActive: (pathname) => pathname.startsWith(ROUTES.studio.transactions),
-  },
-  {
     label: "Settings",
     icon: "tune",
     href: ROUTES.studio.settings,

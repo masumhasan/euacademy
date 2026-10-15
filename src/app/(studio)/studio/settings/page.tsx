@@ -8,7 +8,6 @@ export const metadata: Metadata = { title: "Settings" };
 /** No Stitch design exists for this screen yet; it links to the studio areas that are available. */
 const SHORTCUTS = [
   { icon: "library_books", title: "Course Management", text: "Publish, archive and version your statutory tracks.", href: ROUTES.studio.courses },
-  { icon: "account_balance_wallet", title: "Payoneer & Transactions", text: "Review settlements, VAT receipts and sweeps.", href: ROUTES.studio.transactions },
   { icon: "group", title: "Students & Dossiers", text: "Audit applicant progress and statutory dossiers.", href: ROUTES.studio.students },
 ];
 
@@ -23,7 +22,7 @@ export default function SettingsPage() {
             Workspace, billing and team preferences will be configured here. This screen is not designed yet — use the shortcuts below in the meantime.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-space-md">
           {SHORTCUTS.map((item) => (
             <Link
               key={item.href}
