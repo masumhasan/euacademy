@@ -20,7 +20,7 @@ export default async function UploadPage({ params }: PageProps) {
     <div className="flex flex-col w-full">
       <UploadHeader courseId={id} courseTitle={title} />
       <UploadStatCards />
-      <div className="w-full px-space-lg pb-space-2xl">
+      <div className="w-full px-4 sm:px-space-lg pb-space-2xl">
         <div className="max-w-[1440px] mx-auto flex flex-col xl:flex-row gap-space-lg items-start">
           <div className="w-full xl:w-[68%] flex flex-col gap-space-lg">
             <IngestPanel courseTitle={title} />

@@ -8,7 +8,7 @@ export function SyllabusPanel({ overview, courseSlug }: { overview: LearnOvervie
   const firstLessons = ["0.1 The Statutory Architecture", "0.2 Federal Agency Pathways", "0.3 Consular Operational Mandates"];
 
   return (
-    <aside className="lg:col-span-4 xl:col-span-3 space-y-space-md sticky top-24">
+    <aside className="lg:col-span-4 xl:col-span-3 space-y-space-md lg:sticky lg:top-24">
       <div className="bg-surface-level-1 rounded-xl p-space-md shadow-md">
         <div className="flex items-center justify-between gap-space-xs mb-space-xs">
           <span className="font-label-caps text-label-caps text-primary tracking-widest uppercase">Course Syllabus</span>

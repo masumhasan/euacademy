@@ -9,7 +9,7 @@ export const metadata: Metadata = { title: "Course Management" };
 
 export default function StudioCoursesPage() {
   return (
-    <div className="p-space-lg space-y-space-lg max-w-[1440px] mx-auto w-full">
+    <div className="p-4 sm:p-space-lg space-y-space-lg max-w-[1440px] mx-auto w-full">
       <CourseStatCards />
       <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md bg-surface-level-1 p-space-lg rounded-xl shadow-md">
         <div className="max-w-2xl space-y-1">

@@ -85,7 +85,7 @@ export function CurriculumBuilder({ courseId }: { courseId: string }) {
   }
 
   return (
-    <div className="px-space-lg py-space-lg grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+    <div className="px-4 sm:px-space-lg py-4 sm:py-space-lg grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
       <div className="xl:col-span-4 flex flex-col gap-space-md w-full">
         <div className="bg-surface-level-1 rounded-xl p-space-md flex items-center justify-between shadow-sm">
           <div className="flex items-center gap-space-xs">

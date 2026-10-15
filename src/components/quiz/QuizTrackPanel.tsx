@@ -5,7 +5,7 @@ import type { QUIZ } from "@/constants/mock/quiz";
 
 export function QuizTrackPanel({ track, courseSlug }: { track: (typeof QUIZ)["track"]; courseSlug: string }) {
   return (
-    <aside className="w-full xl:w-[340px] flex-shrink-0 flex flex-col gap-space-md bg-surface-level-1 p-space-lg rounded-xl shadow-xl">
+    <aside className="w-full xl:w-[340px] flex-shrink-0 flex flex-col gap-space-md bg-surface-level-1 p-4 sm:p-space-lg rounded-xl shadow-xl">
       <div className="flex flex-col gap-space-2xs">
         <span className="font-label-caps text-label-caps text-primary uppercase tracking-widest">
           Active Curriculum Track
