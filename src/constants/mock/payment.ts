@@ -26,7 +26,7 @@ export const PAYMENT = {
     stats: [
       { icon: "menu_book", label: "Curriculum", value: "8 Modules", note: "27 Directives" },
       { icon: "folder_special", label: "Statutory Kit", value: "14 Templates", note: "DOCX & PDF Dossiers" },
-      { icon: "verified", label: "Accreditation", value: "Official CPD", note: "Verifiable Certificate" },
+      { icon: "verified", label: "Accreditation", value: "Official CPD", note: "Recognized Standards" },
     ],
     advisor: {
       avatar: IMAGES.advisorAvatar,
@@ -77,12 +77,12 @@ export const PAYMENT = {
     },
     {
       number: "03",
-      icon: "support_agent",
+      icon: "gavel",
       iconClass: "text-tertiary",
-      title: "Meet Assigned Jurist",
-      body: "Attorney Clara Becker is assigned to your batch. You can submit specific case queries directly into the course curriculum forum and weekly consular AMA.",
-      cta: "Send Advisor Introduction",
-      ctaIcon: "forum",
+      title: "Assigned Chancery Proctor",
+      body: "Attorney Clara Becker is assigned to oversee statutory compliance and ensure your dossier kits align with updated consular requirements.",
+      cta: "Open Course Player",
+      ctaIcon: "play_circle",
       href: ROUTES.lesson(slug, DEMO_LESSON_IDS.video),
     },
   ],
@@ -90,6 +90,6 @@ export const PAYMENT = {
   trust: {
     tls: "256-bit TLS Encrypted Transaction",
     bar: "Berlin Bar Association (RAK Berlin) Standard Compliance",
-    ledger: "Certificate Authenticated on Ethereum EU L2 Ledger",
+    ledger: "Verified Registration on EU Legal Ledger",
   },
 };

@@ -49,7 +49,7 @@ export function LearnSidebar({ courseSlug }: { courseSlug: string }) {
           <Icon className="text-primary text-[20px]" name="verified" />
           <div>
             <p className="font-label-interactive text-[0.8125rem] text-text-primary">Accredited Track</p>
-            <p className="font-body-muted text-[0.75rem] text-text-muted">Certificate ID: EU-2025-DE-819</p>
+            <p className="font-body-muted text-[0.75rem] text-text-muted">Dossier ID: EU-2025-DE-819</p>
           </div>
         </Link>
       </div>

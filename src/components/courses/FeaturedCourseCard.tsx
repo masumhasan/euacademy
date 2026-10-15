@@ -54,7 +54,7 @@ export function FeaturedCourseCard({ course }: { course: FeaturedCourse }) {
                 <StatItem caption={`${course.lessonCount} Lessons`} icon="layers" title={`${course.moduleCount} Modules`} />
                 <StatItem caption="On-Demand" icon="timer" title={course.runtime} />
                 <StatItem caption={`${course.reviewCount}+ Expats`} filled icon="star" title={`${course.rating} / 5.0`} />
-                <StatItem caption="Certificate" icon="workspace_premium" title="Chancery Ver." />
+                <StatItem caption="Resources" icon="download" title="14 Blueprints" />
               </div>
             </div>
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md pt-2">

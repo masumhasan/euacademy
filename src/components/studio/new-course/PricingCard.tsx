@@ -1,5 +1,5 @@
 import { Icon } from "@/components/ui/Icon";
-import { Field, INPUT_CLASS, SelectField, Toggle } from "../forms/Field";
+import { Field, INPUT_CLASS, SelectField } from "../forms/Field";
 
 const CURRENCIES = ["EUR (€) - Primary EU Account", "USD ($) - Global Wire", "GBP (£) - UK & Commonwealth"];
 const VAT_CATEGORIES = [
@@ -54,21 +54,7 @@ export function PricingCard() {
         <Field htmlFor="vat-tax" label="EU VAT One Stop Shop (OSS) Statutory Category">
           <SelectField id="vat-tax" options={VAT_CATEGORIES} />
         </Field>
-        <div className="p-space-md rounded-lg bg-surface-level-1 flex items-center justify-between gap-space-md">
-          <div className="flex items-start gap-3">
-            <div className="w-10 h-10 rounded-lg bg-primary-container/20 text-primary flex items-center justify-center shrink-0 mt-0.5">
-              <Icon className="text-[22px]" name="contact_support" />
-            </div>
-            <div className="flex flex-col">
-              <span className="font-title-card text-title-card text-text-primary">Include Direct Jurist Advisory Q&amp;A Seat</span>
-              <p className="font-body-muted text-body-muted text-text-secondary text-sm">
-                Grants student 1 priority written case dossier inquiry directly routed to Chancery Desk counsel within 48
-                business hours.
-              </p>
-            </div>
-          </div>
-          <Toggle defaultChecked label="Include jurist advisory Q&A seat" />
-        </div>
+
       </div>
     </div>
   );

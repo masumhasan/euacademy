@@ -45,11 +45,11 @@ export const DASHBOARD = {
     },
     {
       label: "Chancery Pre-Approvals",
-      icon: "workspace_premium",
+      icon: "verified_user",
       iconClass: "text-primary",
       value: "2",
-      extra: { kind: "text", text: "Certificates Earned" },
-      footnote: "Schengen Stage 1 Certified",
+      extra: { kind: "text", text: "Dossiers Pre-Screened" },
+      footnote: "Schengen Stage 1 Approved",
     },
   ] as const,
   activeTrack: {
@@ -132,14 +132,14 @@ export const DASHBOARD = {
     },
   ],
   liveCohort: {
-    title: "Next Live Chancery Q&A Cohort",
+    title: "Next Live Chancery Briefing Cohort",
     text: "Thursday at 17:00 CET • Live review of consular declaration annexes with Attorney Mathias Schulze",
   },
   qaHref: ROUTES.lesson(PLAYBOOK, DEMO_LESSON_IDS.video),
   consultant: {
     name: "Clara Becker, Jur. Advisor",
     registry: "Kammergericht Berlin Registered",
-    response: "Average response: ~2 hrs",
+    response: "Chancery Mobility Advisor",
     note: "\"Alexander, your qualification dossier is currently well-aligned for § 18b fast-track. Ensure your employment contract annex includes the overtime compensation clause before Monday's review.\"",
   },
   milestones: [

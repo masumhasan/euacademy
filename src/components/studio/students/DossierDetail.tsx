@@ -2,7 +2,6 @@ import Image from "next/image";
 import { Icon } from "@/components/ui/Icon";
 import type { Student } from "@/types/students";
 import { CaseNotePanel } from "./CaseNotePanel";
-import { CertificateCard } from "./CertificateCard";
 import { SettlementCard } from "./SettlementCard";
 
 const ICON_BUTTON = "p-1.5 rounded-lg bg-surface-level-2 text-text-secondary hover:text-text-primary";
@@ -55,7 +54,6 @@ export function DossierDetail({ student }: { student: Student }) {
       </div>
 
       <SettlementCard student={student} />
-      <CertificateCard certificate={detail.certificate} />
       <CaseNotePanel key={student.id} initialNote={detail.caseNote} />
 
       <div className="pt-2 flex flex-col gap-2">

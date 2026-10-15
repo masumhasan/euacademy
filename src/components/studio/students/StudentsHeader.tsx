@@ -9,9 +9,9 @@ export function StudentsHeader() {
           <span className="text-text-muted text-xs">•</span>
           <span className="font-label-code text-label-code text-text-secondary">Chamber Reference ID: 2026-CH-99</span>
         </div>
-        <h1 className="font-headline-md text-headline-md text-text-primary tracking-tight">Students &amp; Payoneer Financial Management</h1>
+        <h1 className="font-headline-md text-headline-md text-text-primary tracking-tight">Students Management</h1>
         <p className="font-body-muted text-body-muted text-text-secondary max-w-3xl mt-0.5">
-          Audit applicant dossier progression, active enrollments, verified certificates, and cross-border Payoneer settlements under EU VAT compliance
+          Audit applicant dossier progression, active enrollments, statutory filings, and cross-border Payoneer settlements under EU VAT compliance
           directives.
         </p>
       </div>

@@ -3,7 +3,7 @@ import { IMAGES } from "@/constants/images";
 export const VIDEO_LESSON = {
   moduleLabel: "Module 01",
   lessonLabel: "Lesson 1.2",
-  title: "Mastering the Consular Services Portal: Data Validation & Avoiding Instant Reject Flags",
+  title: "Sample Master Course",
   duration: "16 Min 40 Sec",
   statutes: "AufenthG § 18b • BeschV § 2",
   verified: "Verified for Q1 2026 Chancery Standards",

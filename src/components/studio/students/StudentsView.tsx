@@ -9,10 +9,9 @@ import { PipelineBanner } from "./PipelineBanner";
 import { StudentFilters } from "./StudentFilters";
 import { StudentKpiCards } from "./StudentKpiCards";
 import { StudentsHeader } from "./StudentsHeader";
-import { StudentsTabs } from "./StudentsTabs";
 
 function matchesTab(student: Student, tab: StudentsTab): boolean {
-  if (tab === "certificates") return Boolean(student.detail.certificate);
+  if (tab === "certificates") return student.progress.status === "completed";
   if (tab === "sponsors") return Boolean(student.sponsored);
   return true;
 }
@@ -24,7 +23,7 @@ function matchesQuery(student: Student, query: string): boolean {
 }
 
 export function StudentsView({ initialTab }: { initialTab: StudentsTab }) {
-  const [tab, setTab] = useState<StudentsTab>(initialTab);
+  const tab = initialTab;
   const [query, setQuery] = useState("");
   const [pathway, setPathway] = useState<PathwayFilter>("all");
   const [status, setStatus] = useState<StatusFilter>("all");
@@ -52,7 +51,6 @@ export function StudentsView({ initialTab }: { initialTab: StudentsTab }) {
       <div className="absolute -top-6 right-1/4 w-80 h-40 bg-tertiary/5 rounded-full blur-3xl pointer-events-none -z-10" />
       <StudentsHeader />
       <StudentKpiCards />
-      <StudentsTabs active={tab} onChange={setTab} />
       <StudentFilters
         onPathwayChange={setPathway}
         onQueryChange={setQuery}

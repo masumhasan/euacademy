@@ -4,14 +4,14 @@ import type { PathwayFilter, Student, StudentKpi, StudentsTab, StatusFilter } fr
 export const STUDENT_KPIS: StudentKpi[] = [
   { label: "Active Dossiers", value: "1,420", icon: "folder_shared", footerIcon: "trending_up", footer: "+14% this quarter", footerTone: "text-tertiary" },
   { label: "Settled Volume (30D)", value: "€284,310.00", icon: "payments", footerDot: "bg-status-success", footer: "Payoneer Global Rail", footerTone: "text-text-secondary" },
-  { label: "Certificates Issued", value: "842", icon: "verified_user", footerDot: "bg-primary", footer: "100% On-chain audited", footerTone: "text-text-secondary" },
+  { label: "Completed Dossiers", value: "842", icon: "folder_managed", footerDot: "bg-primary", footer: "Consular ready", footerTone: "text-text-secondary" },
   { label: "OSS VAT Disbursed", value: "€45,418.90", icon: "receipt_long", footerIcon: "check_circle", footer: "VIES Certified DE", footerTone: "text-tertiary" },
 ];
 
 export const STUDENT_TABS: { id: StudentsTab; label: string; icon: string; registryTitle: string }[] = [
   { id: "students", label: "All Students & Dossiers (1,420)", icon: "group", registryTitle: "Master Dossier Registry" },
   { id: "payoneer", label: "Payoneer Settlements & Invoices", icon: "account_balance_wallet", registryTitle: "Payoneer Settlement Ledger" },
-  { id: "certificates", label: "Certificates Ledger", icon: "workspace_premium", registryTitle: "Certificates Ledger" },
+  { id: "certificates", label: "Completed Dossiers", icon: "folder_managed", registryTitle: "Completed Dossiers Registry" },
   { id: "sponsors", label: "Corporate Sponsors", icon: "apartment", registryTitle: "Corporate Sponsor Accounts" },
 ];
 
@@ -25,7 +25,7 @@ export const PATHWAY_OPTIONS: { value: PathwayFilter; label: string }[] = [
 export const STATUS_OPTIONS: { value: StatusFilter; label: string }[] = [
   { value: "all", label: "Status: All" },
   { value: "active", label: "Active Progression" },
-  { value: "completed", label: "Completed & Certified" },
+  { value: "completed", label: "Completed Dossiers" },
   { value: "appeal", label: "Stalled / Remonstration" },
 ];
 
@@ -43,12 +43,11 @@ export const STUDENTS: Student[] = [
     courseTitle: "German National Visa & Opportunity Card",
     pathway: "Opportunity Card (§ 20a)",
     pathwayKey: "opportunity-card",
-    progress: { status: "completed", label: "100% Completed", percent: 100, note: "Cert #CERT-EUA-2026-8841X" },
+    progress: { status: "completed", label: "100% Completed", percent: 100, note: "Dossier Packet Verified" },
     enrolledDate: "12 Jan 2026",
     enrolledTime: "14:22 CET",
     amount: "€189.00",
     rail: "Instant Escrow",
-    qaCount: 2,
     detail: {
       reference: "#EUA-2026-8841X",
       avatar: IMAGES.avatarAlexanderLarge,
@@ -61,7 +60,6 @@ export const STUDENTS: Student[] = [
       taxBreakdown: "€158.82 Net + €30.18 DE MwSt (19%)",
       paymentRail: "Payoneer Global Escrow (EUR)",
       viesStatus: "DE318992011 (OSS Compliant)",
-      certificate: { id: "CERT-EUA-2026-8841X", hash: "SHA-256: 4f9d8812...7c82a" },
       caseNote: {
         author: "Mathias Schulze, RA",
         initials: "MS",
@@ -84,7 +82,6 @@ export const STUDENTS: Student[] = [
     enrolledTime: "08:15 CET",
     amount: "€199.00",
     rail: "Wire / Global Card",
-    qaCount: 1,
     detail: {
       reference: "#EUA-2026-7712P",
       avatar: IMAGES.avatarPriya,

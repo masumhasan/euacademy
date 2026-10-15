@@ -42,7 +42,6 @@ function Progress({ student }: { student: Student }) {
 
 export function DossierRow({ student, selected, onSelect }: DossierRowProps) {
   const first = student.name.split(" ")[0];
-  const qa = student.qaCount ?? 0;
 
   return (
     <tr
@@ -99,20 +98,6 @@ export function DossierRow({ student, selected, onSelect }: DossierRowProps) {
             type="button"
           >
             View Dossier
-          </button>
-          <button
-            aria-label={`Open Q&A for ${first}`}
-            className={cn("p-1 rounded bg-surface-level-2 hover:bg-surface-elevated relative", qa > 0 ? "text-tertiary" : "text-text-muted")}
-            onClick={(event) => event.stopPropagation()}
-            title={qa > 0 ? `${qa} Open Q&A item${qa > 1 ? "s" : ""}` : undefined}
-            type="button"
-          >
-            <Icon className="text-[18px]" name="forum" />
-            {qa > 0 && (
-              <span className="absolute -top-1 -right-1 w-3.5 h-3.5 bg-tertiary text-on-tertiary-container rounded-full text-[9px] flex items-center justify-center font-bold">
-                {qa}
-              </span>
-            )}
           </button>
           <button
             aria-label={`Download Invoice for ${first}`}

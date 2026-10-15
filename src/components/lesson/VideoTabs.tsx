@@ -6,7 +6,6 @@ import { cn } from "@/lib/cn";
 import type { VIDEO_LESSON } from "@/constants/mock/videoLesson";
 import { VideoNotesTab } from "./VideoNotesTab";
 import { VideoOverviewTab } from "./VideoOverviewTab";
-import { VideoQaTab } from "./VideoQaTab";
 import { VideoResourcesTab } from "./VideoResourcesTab";
 
 type Lesson = typeof VIDEO_LESSON;
@@ -14,7 +13,6 @@ type Lesson = typeof VIDEO_LESSON;
 const TABS = [
   { id: "overview", icon: "overview", label: () => "Overview" },
   { id: "resources", icon: "attachment", label: (l: Lesson) => `Resources (${l.resources.length})` },
-  { id: "qa", icon: "forum", label: () => "Course Q&A (18)" },
   { id: "notes", icon: "edit_note", label: () => "Notes & Bookmarks" },
 ] as const;
 
@@ -47,7 +45,6 @@ export function VideoTabs({ lesson }: { lesson: Lesson }) {
       </div>
       {active === "overview" && <VideoOverviewTab lesson={lesson} />}
       {active === "resources" && <VideoResourcesTab resources={lesson.resources} />}
-      {active === "qa" && <VideoQaTab questions={lesson.questions} />}
       {active === "notes" && <VideoNotesTab note={lesson.note} />}
     </div>
   );

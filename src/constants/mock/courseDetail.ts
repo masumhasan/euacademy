@@ -68,7 +68,7 @@ const MODULES: CurriculumModule[] = [
     title: "Module 04: The Consular Interview Day & Biometric Lodgement",
     lessonCount: 3,
     minutes: 28,
-    lockedNote: "Consular Q&A simulations, counter psychology, and biometric security steps.",
+    lockedNote: "Consular interview preparation, counter psychology, and biometric security steps.",
   },
   {
     id: "m5",
@@ -109,7 +109,7 @@ const PLAYBOOK_DETAIL: CourseDetail = {
     "8 Modules",
     "27 Lessons",
     "4h 30m Runtime",
-    "Cryptographic Completion Certificate",
+    "Lifetime Course Access",
     "Full Statutory Dossier Pack",
   ],
   moduleCount: 8,
@@ -190,9 +190,9 @@ const PLAYBOOK_DETAIL: CourseDetail = {
         "Yes. All modules, checklists, and document templates include the recent modifications to the Chancenkarte points schedule (§ 20a AufenthG), lowered salary thresholds for the EU Blue Card, and updated Federal Employment Agency (BA) internal testing rules.",
     },
     {
-      question: "Can I submit specific questions about my employment contract or situation?",
+      question: "Are document checklists and statutory templates regularly reviewed?",
       answer:
-        "Enrolled students receive access to the dedicated Legal Q&A tab inside the player, where certified immigration paralegals and jurists address specific dossier formatting inquiries within 48 business hours. For bespoke legal representation, course members receive a credit toward private retainer services.",
+        "Yes. All document organizers, bilingual exhibits, and cover letter templates are routinely audited by chancery jurists against updated BMI and Auswärtiges Amt procedural directives. For bespoke legal representation, course members receive a credit toward private retainer services.",
     },
     {
       question: "How long do I maintain access to the masterclass content and updates?",
@@ -216,8 +216,8 @@ const PLAYBOOK_DETAIL: CourseDetail = {
     features: [
       { strong: "4.5 hours", text: " on-demand legal video & audio breakdowns" },
       { strong: "14 downloadable templates", text: " & checklists (PDF & DOCX)" },
-      { strong: "Direct 1-on-1 Q&A access", text: " to certified immigration jurists" },
-      { strong: "Verified Certificate", text: " of Statutory Completion" },
+      { strong: "Consular Blueprint Pack", text: " with 14 statutory templates" },
+      { strong: "Lifetime Access", text: " with ongoing statutory updates" },
       { text: "Cross-platform access: Web, iPadOS, iOS & Android" },
       { text: "Bundesagentur für Arbeit compliance updates feed" },
     ],

@@ -12,14 +12,14 @@ const REASONS = [
     text: "Bilingual forms, cover letters, and document organizers accepted across consular missions worldwide.",
   },
   {
-    icon: "support_agent",
-    title: "Direct 1-on-1 Consultant Q&A",
-    text: "Enrolled students can submit dossier questions directly to senior case officers under guaranteed SLAs.",
+    icon: "assignment_turned_in",
+    title: "Consular Case-Filing Architecture",
+    text: "Procedural playbooks structured specifically to meet federal standards of German immigration authorities.",
   },
   {
-    icon: "verified",
-    title: "Official Verified Certificate of Completion",
-    text: "Cryptographically signed graduation credentials indicating regulatory framework understanding.",
+    icon: "update",
+    title: "Continuous Statutory & Policy Updates",
+    text: "Regularly revised modules reflecting real-time changes in EU immigration directives and consular ordinances.",
   },
 ];
 

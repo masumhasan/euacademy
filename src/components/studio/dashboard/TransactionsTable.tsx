@@ -8,7 +8,7 @@ const HEADERS = ["Identifier", "Applicant / Student", "Curriculum", "Amount", "S
 
 export function TransactionsTable() {
   return (
-    <div className="lg:col-span-7 bg-surface-level-2 p-space-lg rounded-xl border border-gold-hairline flex flex-col justify-between">
+    <div className="col-span-12 bg-surface-level-2 p-space-lg rounded-xl border border-gold-hairline flex flex-col justify-between">
       <div>
         <div className="flex items-center justify-between pb-space-sm mb-space-sm border-b border-border-neutral">
           <div>

@@ -9,7 +9,7 @@ export const metadata: Metadata = { title: "Settings" };
 const SHORTCUTS = [
   { icon: "library_books", title: "Course Management", text: "Publish, archive and version your statutory tracks.", href: ROUTES.studio.courses },
   { icon: "account_balance_wallet", title: "Payoneer & Transactions", text: "Review settlements, VAT receipts and sweeps.", href: ROUTES.studio.transactions },
-  { icon: "group", title: "Students & Dossiers", text: "Audit applicant progress and issued certificates.", href: ROUTES.studio.students },
+  { icon: "group", title: "Students & Dossiers", text: "Audit applicant progress and statutory dossiers.", href: ROUTES.studio.students },
 ];
 
 export default function SettingsPage() {

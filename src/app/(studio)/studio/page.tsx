@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Icon } from "@/components/ui/Icon";
-import { AdvisoryQueue } from "@/components/studio/dashboard/AdvisoryQueue";
 import { KpiCards } from "@/components/studio/dashboard/KpiCards";
 import { RevenueChart } from "@/components/studio/dashboard/RevenueChart";
 import { TopTracks } from "@/components/studio/dashboard/TopTracks";
@@ -48,7 +47,6 @@ export default function StudioDashboardPage() {
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
         <TransactionsTable />
-        <AdvisoryQueue />
       </div>
     </div>
   );

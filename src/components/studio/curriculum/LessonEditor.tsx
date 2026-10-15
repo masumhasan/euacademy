@@ -101,7 +101,7 @@ export function LessonEditor({
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-space-sm bg-surface-level-2 p-space-sm rounded-lg">
         {[
           { title: "Free Public Preview", text: "Available prior to purchase", label: "Toggle Free Preview" },
-          { title: "Enforce Minimum Watch", text: "Required for certificate unlock", label: "Toggle Minimum Watch" },
+          { title: "Enforce Minimum Watch", text: "Required for module completion", label: "Toggle Minimum Watch" },
         ].map((item) => (
           <div key={item.title} className="flex items-center justify-between px-space-sm py-1.5">
             <div className="flex flex-col">

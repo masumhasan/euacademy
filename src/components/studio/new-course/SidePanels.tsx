@@ -7,9 +7,9 @@ const CARD = "bg-surface-level-2 rounded-xl p-space-md sm:p-space-lg shadow-md s
 const CHOICE = "flex items-start gap-3 p-2.5 rounded-lg bg-surface-level-1 hover:bg-surface-elevated cursor-pointer transition-colors";
 
 const BADGES = [
-  { title: "Official Chancery Certificate", text: "Cryptographically verifiable PDF with dossier hash" },
+  { title: "Statutory Dossier Audit", text: "Structured case compliance with procedural checklist" },
   { title: "14 Downloadable Dossier Templates", text: "DIN 5008 cover letters, Sperrkonto forms, CVs" },
-  { title: "Dedicated Jurist Q&A Desk", text: "Direct ticketing in Chancery inbox" },
+  { title: "Statutory Filing Blueprints", text: "DIN 5008 verified cover letters & declarations" },
   { title: "Consular Checklist Vetted", text: "Audited against 2026 Auslandsportal APIs" },
 ];
 const STATUSES = [

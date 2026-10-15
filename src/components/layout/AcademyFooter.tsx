@@ -16,7 +16,7 @@ const COLUMNS: Array<{ title: string; links: FooterLink[] }> = [
       { label: "Digital Nomad Visas (Spain & Portugal)", href: ROUTES.courses },
       { label: "German Chancenkarte Guide", href: ROUTES.course("german-national-visa-playbook") },
       { label: "Tax Residency & Cross-Border Law", href: ROUTES.courses },
-      { label: "Certification Directory", href: ROUTES.myLearning },
+      { label: "Student Learning Portal", href: ROUTES.myLearning },
     ],
   },
   {

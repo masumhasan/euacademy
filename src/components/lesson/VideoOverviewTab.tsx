@@ -121,13 +121,6 @@ export function VideoOverviewTab({ lesson }: { lesson: Lesson }) {
             </div>
           </div>
           <p className="font-body-muted text-[0.8125rem] text-text-muted">{instructor.bio}</p>
-          <button
-            className="w-full py-2 rounded-lg bg-surface-elevated hover:bg-surface-bright text-text-primary font-label-interactive text-label-interactive flex items-center justify-center gap-2 transition-colors"
-            type="button"
-          >
-            <Icon className="text-[16px] text-primary" name="chat" />
-            <span>Ask Mathias a Question</span>
-          </button>
         </div>
 
         <div className="p-space-md rounded-xl bg-surface-level-2 flex flex-col gap-space-sm">

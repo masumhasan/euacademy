@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { Icon } from "@/components/ui/Icon";
 import { cn } from "@/lib/cn";
 import { DASHBOARD } from "@/constants/mock/dashboard";
@@ -33,22 +32,6 @@ function ConsultantCard() {
       </div>
       <div className="bg-surface-level-1 p-space-sm rounded-lg text-text-secondary font-body-muted text-[0.8125rem] leading-relaxed">
         {consultant.note}
-      </div>
-      <div className="grid grid-cols-2 gap-space-xs">
-        <button
-          className="bg-primary hover:bg-gold-hover text-on-primary font-label-interactive text-[0.8125rem] py-2 px-space-xs rounded-lg shadow-sm transition-all flex items-center justify-center gap-1"
-          type="button"
-        >
-          <Icon className="text-[16px]" name="chat" />
-          <span>Message Clara</span>
-        </button>
-        <Link
-          className="bg-surface-level-1 hover:bg-surface-elevated text-text-primary font-label-interactive text-[0.8125rem] py-2 px-space-xs rounded-lg shadow-sm transition-all flex items-center justify-center gap-1"
-          href={DASHBOARD.qaHref}
-        >
-          <Icon className="text-[16px] text-text-secondary" name="help" />
-          <span>Course Q&amp;A</span>
-        </Link>
       </div>
     </div>
   );
@@ -87,36 +70,6 @@ function MilestonesCard() {
                 {milestone.title}
               </h5>
               <p className="font-body-muted text-body-muted text-text-secondary text-[0.8125rem]">{milestone.text}</p>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
-
-function QaCard() {
-  return (
-    <div className={CARD}>
-      <div className="flex items-center justify-between">
-        <span className={CARD_TITLE}>Recent Q&amp;A Activity</span>
-        <Link
-          className="text-primary hover:text-gold-hover font-label-code text-[0.75rem]"
-          href={DASHBOARD.qaHref}
-        >
-          View All (7)
-        </Link>
-      </div>
-      <div className="flex flex-col gap-space-sm">
-        {DASHBOARD.qa.map((item) => (
-          <div key={item.text} className="p-space-sm rounded-lg bg-surface-level-1 flex flex-col gap-space-2xs">
-            <p className="font-body-muted text-body-muted text-on-surface font-medium line-clamp-2">{item.text}</p>
-            <div className="flex items-center justify-between mt-1 text-text-muted font-label-code text-[0.75rem]">
-              <span className="text-status-success flex items-center gap-1">
-                <Icon className="text-[14px]" name={item.icon} />
-                <span>{item.status}</span>
-              </span>
-              <span>{item.time}</span>
             </div>
           </div>
         ))}
@@ -164,7 +117,6 @@ export function DashboardSidebar() {
     <div className="lg:col-span-4 flex flex-col gap-space-lg">
       <ConsultantCard />
       <MilestonesCard />
-      <QaCard />
       <DocumentsCard />
     </div>
   );

@@ -43,7 +43,6 @@ export interface Student {
   amount: string;
   rail: string;
   sponsored?: boolean;
-  qaCount?: number;
   /** Dossier detail panel. */
   detail: {
     reference: string;

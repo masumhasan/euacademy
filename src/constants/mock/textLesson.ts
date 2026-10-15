@@ -32,16 +32,18 @@ export const TEXT_LESSON = {
       "The single most widespread cause of consular delays and outright refusals is confusing who does what. The German visa infrastructure is divided into three distinct legal walls.",
   },
   audio: {
+    src: "/assets/m0l1.mp3",
+    fallbackSrc: "/assets/m0l1.mp3.mpeg",
     title: "Listen to this lesson",
     total: "12:45",
     subtitle: "Official audio lecture • High-speed summary for legal dossiers",
-    elapsed: "04:15",
+    elapsed: "00:00",
     chapter: "The Administrative Firewall",
-    percent: 34,
+    percent: 0,
     speeds: ["1.0x", "1.25x", "1.5x"],
     /** Waveform bar heights (Tailwind h-* steps); first `playedBars` are filled. */
     bars: [2, 4, 6, 3, 7, 5, 8, 6, 4, 7, 3, 5, 7, 4, 8, 2, 5, 6, 3, 7, 5, 2, 6, 4, 8, 3, 6, 2],
-    playedBars: 12,
+    playedBars: 0,
   },
   principle:
     "“Most applicants lose months because they argue with the wrong layer. The portal, the service provider, and the consular visa section are three separate entities with fundamentally non-overlapping statutory powers.”",
