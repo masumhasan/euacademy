@@ -7,7 +7,6 @@ import { InstructorSection } from "@/components/course-detail/InstructorSection"
 import { LegalNotice } from "@/components/course-detail/LegalNotice";
 import { OutcomesSection, PrerequisitesSection } from "@/components/course-detail/OutcomesAndPrerequisites";
 import { PurchaseCard } from "@/components/course-detail/PurchaseCard";
-import { ReviewsSection } from "@/components/course-detail/ReviewsSection";
 import { COURSES, FEATURED_COURSE } from "@/constants/mock/courses";
 import { getCourseDetail } from "@/constants/mock/courseDetail";
 
@@ -44,7 +43,6 @@ export default async function CourseDetailPage({ params }: PageProps) {
             {course.prerequisites.length > 0 && <PrerequisitesSection items={course.prerequisites} />}
             <CurriculumAccordion course={course} />
             <InstructorSection instructor={course.instructor} />
-            {course.reviews.length > 0 && <ReviewsSection rating={course.rating} reviews={course.reviews} />}
             <FaqAccordion faqs={course.faqs} />
             <LegalNotice text={course.legalNotice} />
           </div>

@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { Icon } from "@/components/ui/Icon";
 import type { Student } from "@/types/students";
-import { CaseNotePanel } from "./CaseNotePanel";
 import { SettlementCard } from "./SettlementCard";
 
 const ICON_BUTTON = "p-1.5 rounded-lg bg-surface-level-2 text-text-secondary hover:text-text-primary";
@@ -54,16 +53,8 @@ export function DossierDetail({ student }: { student: Student }) {
       </div>
 
       <SettlementCard student={student} />
-      <CaseNotePanel key={student.id} initialNote={detail.caseNote} />
 
-      <div className="pt-2 flex flex-col gap-2">
-        <button
-          className="w-full py-2.5 px-space-md rounded-lg bg-primary-container hover:bg-gold-hover text-on-primary-container font-label-interactive text-label-interactive font-semibold shadow-md transition-all flex items-center justify-center gap-2"
-          type="button"
-        >
-          <Icon className="text-[18px]" name="outgoing_mail" />
-          <span>Transmit Dossier to German Embassy</span>
-        </button>
+      <div className="pt-2">
         <div className="grid grid-cols-2 gap-2">
           <button className={SECONDARY_ACTION} type="button">
             <Icon className="text-[16px]" name="folder_zip" />
