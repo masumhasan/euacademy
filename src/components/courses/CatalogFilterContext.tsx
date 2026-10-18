@@ -5,7 +5,6 @@ import type { CategoryKey, CourseSummary } from "@/types/course";
 
 export const SORT_OPTIONS = [
   "Most Enrolled",
-  "Highest Rated",
   "Recently Updated",
   "Price: Low to High",
 ] as const;
@@ -37,8 +36,6 @@ function sortCourses(courses: CourseSummary[], sort: SortOption) {
   switch (sort) {
     case "Most Enrolled":
       return sorted.sort((a, b) => b.reviewCount - a.reviewCount);
-    case "Highest Rated":
-      return sorted.sort((a, b) => b.rating - a.rating);
     case "Price: Low to High":
       return sorted.sort((a, b) => a.price - b.price);
     default:

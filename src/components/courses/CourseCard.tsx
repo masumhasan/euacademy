@@ -30,13 +30,8 @@ export function CourseCard({ course }: { course: CourseSummary }) {
           </div>
         </Link>
         <div className="p-space-md flex flex-col gap-space-xs">
-          <div className="flex items-center justify-between text-xs text-text-muted font-label-code">
+          <div className="text-xs text-text-muted font-label-code">
             <span>{course.reference}</span>
-            <div className="flex items-center text-primary">
-              <Icon className="text-[15px]" filled name="star" />
-              <span className="font-bold ml-1">{course.rating.toFixed(2)}</span>
-              <span className="text-text-muted ml-0.5">({course.reviewCount})</span>
-            </div>
           </div>
           <h4 className="font-title-card text-title-card text-text-primary group-hover:text-primary transition-colors">
             <Link href={href}>{course.title}</Link>

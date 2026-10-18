@@ -50,10 +50,9 @@ export function FeaturedCourseCard({ course }: { course: FeaturedCourse }) {
               <p className="font-body-default text-body-default text-text-secondary mb-space-lg max-w-xl">
                 {course.description}
               </p>
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 py-3 border-y border-border-neutral mb-space-lg">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 py-3 border-y border-border-neutral mb-space-lg">
                 <StatItem caption={`${course.lessonCount} Lessons`} icon="layers" title={`${course.moduleCount} Modules`} />
                 <StatItem caption="On-Demand" icon="timer" title={course.runtime} />
-                <StatItem caption={`${course.reviewCount}+ Expats`} filled icon="star" title={`${course.rating} / 5.0`} />
                 <StatItem caption="Resources" icon="download" title="14 Blueprints" />
               </div>
             </div>
@@ -123,11 +122,8 @@ export function FeaturedCourseCard({ course }: { course: FeaturedCourse }) {
                 <div className="w-full h-1.5 rounded-full bg-surface-elevated overflow-hidden">
                   <div className="h-full bg-gradient-to-r from-primary to-gold-highlight w-full rounded-full" />
                 </div>
-                <div className="flex items-center justify-between text-[11px] text-text-muted">
+                <div className="text-[11px] text-text-muted">
                   <span>{course.attachmentsNote}</span>
-                  <span className="text-status-success flex items-center gap-1 font-label-code">
-                    <Icon className="text-[13px]" name="check_circle" /> Verified
-                  </span>
                 </div>
               </div>
             </div>

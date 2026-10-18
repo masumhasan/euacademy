@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { Icon } from "@/components/ui/Icon";
-import { StarRating } from "@/components/ui/StarRating";
 import { ROUTES } from "@/constants/routes";
 import type { CourseDetail } from "@/types/courseDetail";
 
@@ -33,11 +32,6 @@ export function CourseDetailHero({ course }: { course: CourseDetail }) {
         </h1>
         <p className="font-body-legal text-body-legal text-on-surface-variant max-w-3xl">{course.subtitle}</p>
         <div className="pt-space-xs flex flex-wrap items-center gap-y-3 gap-x-6 text-body-muted font-body-muted text-text-secondary border-y border-border-neutral/60 py-3">
-          <div className="flex items-center gap-1.5">
-            <StarRating value={course.rating} />
-            <span className="font-semibold text-text-primary">{course.rating}</span>
-            <span className="text-text-muted">{course.reviewCountLabel}</span>
-          </div>
           <div className="flex items-center gap-1.5">
             <Icon className="text-primary text-[18px]" name="verified_user" />
             <span>
