@@ -1,3 +1,4 @@
+import { NotificationBell } from "@/components/layout/NotificationBell";
 import { Icon } from "@/components/ui/Icon";
 
 export function StudioTopbar({ onToggleSidebar }: { onToggleSidebar?: () => void }) {
@@ -28,14 +29,7 @@ export function StudioTopbar({ onToggleSidebar }: { onToggleSidebar?: () => void
         </div>
       </div>
       <div className="flex items-center gap-2 sm:gap-space-md ml-2 sm:ml-space-md flex-shrink-0">
-        <button
-          aria-label="Notifications"
-          className="relative p-2 rounded-lg hover:bg-surface-level-2 text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer"
-          type="button"
-        >
-          <Icon className="text-[22px]" name="notifications" />
-          <span className="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-primary" />
-        </button>
+        <NotificationBell className="hover:bg-surface-level-2 cursor-pointer" dotClassName="top-1.5 right-1.5" />
         <div className="h-8 w-px bg-surface-variant/40 hidden sm:block" />
         <div className="flex items-center gap-space-sm">
           <div className="flex-col text-right hidden sm:flex">

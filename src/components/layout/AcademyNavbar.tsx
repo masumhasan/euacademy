@@ -6,6 +6,7 @@ import { ROUTES } from "@/constants/routes";
 import { cn } from "@/lib/cn";
 import { Icon } from "@/components/ui/Icon";
 import { BrandLogo } from "./BrandLogo";
+import { NotificationBell } from "./NotificationBell";
 
 interface NavItem {
   label: string;
@@ -77,14 +78,7 @@ export function AcademyNavbar() {
             <Icon className="text-primary text-[18px]" name="school" />
             <span>My Learning</span>
           </Link>
-          <button
-            aria-label="Notifications"
-            className="relative flex items-center justify-center p-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-level-1 transition-colors"
-            type="button"
-          >
-            <Icon className="text-[22px]" name="notifications" />
-            <span className="absolute top-2 right-2 w-2 h-2 rounded-full bg-primary ring-2 ring-surface-base" />
-          </button>
+          <NotificationBell className="hover:bg-surface-level-1" />
           <Link
             aria-label="Student profile"
             className="relative flex items-center pl-space-xs"
