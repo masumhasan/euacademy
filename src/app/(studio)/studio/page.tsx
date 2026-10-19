@@ -13,7 +13,7 @@ export default function StudioDashboardPage() {
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
         <div>
           <div className="flex items-center gap-space-xs text-text-muted font-label-caps text-label-caps uppercase tracking-widest mb-1">
-            <span>Chancery Legal Ops</span>
+            <span>Academy Studio Ops</span>
             <span className="text-primary font-bold">/</span>
             <span>Executive Intelligence &amp; Payout Rails</span>
           </div>
@@ -36,7 +36,7 @@ export default function StudioDashboardPage() {
             type="button"
           >
             <Icon className="text-[18px]" name="download_for_offline" />
-            <span>Export Statutory Dossier</span>
+            <span>Export Academy Report</span>
           </button>
         </div>
       </div>

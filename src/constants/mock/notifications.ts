@@ -11,10 +11,10 @@ export const SAMPLE_NOTIFICATIONS: AppNotification[] = [
   },
   {
     id: "n2",
-    title: "Statutory update published",
+    title: "Regulations update published",
     body: "§ 18g salary thresholds for 2026 have been applied to the EU Blue Card masterclass.",
     time: "1 hour ago",
-    icon: "gavel",
+    icon: "update",
     unread: true,
   },
   {
@@ -28,7 +28,7 @@ export const SAMPLE_NOTIFICATIONS: AppNotification[] = [
   {
     id: "n4",
     title: "Live cohort reminder",
-    body: "Consular Q&A with RA Mathias Schulze starts Thursday at 18:00 CET.",
+    body: "Consular Q&A with Senior Visa Specialist starts Thursday at 18:00 CET.",
     time: "2 days ago",
     icon: "event",
     unread: false,

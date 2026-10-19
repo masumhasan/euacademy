@@ -3,7 +3,7 @@
 import { useState } from "react";
 import type { StudentCaseNote } from "@/types/students";
 
-const AUTHOR = { name: "Mathias Schulze, RA", initials: "MS" };
+const AUTHOR = { name: "EUVisaAdvice Team", initials: "EU" };
 
 /** Case notes for one dossier. Remount with `key` when the selected student changes. */
 export function CaseNotePanel({ initialNote }: { initialNote?: StudentCaseNote }) {
@@ -19,7 +19,7 @@ export function CaseNotePanel({ initialNote }: { initialNote?: StudentCaseNote }
 
   return (
     <div className="flex flex-col gap-2">
-      <span className="font-label-caps text-label-caps text-text-muted uppercase tracking-wider">Lead Jurist Case Note</span>
+      <span className="font-label-caps text-label-caps text-text-muted uppercase tracking-wider">Lead Advisor Case Note</span>
       <div className="bg-surface-level-2/60 rounded-lg p-space-sm flex flex-col gap-2">
         {notes.length === 0 && <p className="font-body-muted text-body-muted text-text-muted text-xs">No case notes recorded for this dossier.</p>}
         {notes.map((note, index) => (

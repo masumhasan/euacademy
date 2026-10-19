@@ -12,7 +12,7 @@ export function CourseGrid() {
         <div>
           <h3 className="font-headline-md text-headline-md text-text-primary">Curriculum Directory</h3>
           <p className="font-body-muted text-body-muted text-text-secondary">
-            Self-paced video modules, embassy checklists, and jurist-reviewed petition blueprints.
+            Video masterclasses, comprehensive E-Books &amp; PDFs, and expert-reviewed petition blueprints.
           </p>
         </div>
         <label className="hidden sm:flex items-center gap-2">

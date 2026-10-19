@@ -19,7 +19,7 @@ export function EnrolledCourseCard() {
               <span className="h-1.5 w-1.5 rounded-full bg-status-success" /> ACTIVE CLEARANCE
             </span>
           </div>
-          <span className="font-label-code text-label-code text-text-muted">CHANCERY ACCREDITED</span>
+          <span className="font-label-code text-label-code text-text-muted">ACADEMY ACCREDITED</span>
         </div>
         <div className="relative w-full aspect-[16/9] rounded-lg overflow-hidden mb-space-md bg-surface-base border border-border-neutral">
           <Image

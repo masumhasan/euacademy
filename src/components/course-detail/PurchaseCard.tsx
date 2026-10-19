@@ -42,7 +42,7 @@ export function PurchaseCard({ course }: { course: CourseDetail }) {
               {purchase.previewLabel}
             </span>
             <span className="px-2 py-0.5 rounded bg-surface-base/80 text-text-secondary font-label-code text-[11px]">
-              1080p Chancery Stream
+              1080p Full HD Stream
             </span>
           </div>
         </button>
@@ -77,7 +77,7 @@ export function PurchaseCard({ course }: { course: CourseDetail }) {
                 className="font-body-muted text-[0.8125rem] text-text-secondary hover:text-primary transition-colors inline-flex items-center gap-1"
                 href={MAIN_SITE_LINKS.services}
               >
-                <span>Or included with EUVisaAdvice Retainer Advisory</span>
+                <span>Or included with EUVisaAdvice Premium Advisory</span>
                 <Icon className="text-[14px]" name="arrow_forward" />
               </a>
             </div>
@@ -88,7 +88,7 @@ export function PurchaseCard({ course }: { course: CourseDetail }) {
               <Icon className="text-primary text-[14px]" name="verified" />
               <span>{purchase.guarantee}</span>
             </div>
-            <p>Lifetime access • Includes all upcoming 2026 statutory updates</p>
+            <p>Lifetime access • Includes all upcoming 2026 curriculum updates</p>
           </div>
 
           <div className="space-y-space-sm pt-2 border-t border-border-neutral">
@@ -111,7 +111,7 @@ export function PurchaseCard({ course }: { course: CourseDetail }) {
           <div className="pt-2 border-t border-border-neutral/60 flex items-center justify-between text-text-muted font-label-code text-[11px]">
             <span className="flex items-center gap-1">
               <Icon className="text-status-success text-[14px]" name="lock" />
-              <span>Chancery 256-bit Checkout</span>
+              <span>Secure 256-bit Checkout</span>
             </span>
             <span className="text-text-muted">EU / VAT Compliant Invoicing</span>
           </div>

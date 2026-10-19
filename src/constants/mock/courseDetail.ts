@@ -13,7 +13,7 @@ const MODULES: CurriculumModule[] = [
       {
         id: "0-1",
         kind: "video",
-        title: "0.1 The Statutory Architecture & The 3 Powers of German Immigration",
+        title: "0.1 The Practical Architecture & The 3 Powers of German Immigration",
         format: "Video Lesson",
         duration: "08:14",
         freePreview: true,
@@ -21,8 +21,8 @@ const MODULES: CurriculumModule[] = [
       {
         id: "0-2",
         kind: "article",
-        title: "0.2 The Legal Spine in 5 Provisions (AufenthG Core Rules)",
-        format: "Statutory Brief & Audio Guide",
+        title: "0.2 The Core Regulatory Framework in 5 Provisions (AufenthG Rules)",
+        format: "Overview Brief & Audio Guide",
         duration: "09:50",
       },
       {
@@ -95,22 +95,22 @@ const MODULES: CurriculumModule[] = [
 
 const PLAYBOOK_DETAIL: CourseDetail = {
   slug: FEATURED_COURSE.slug,
-  overline: "Immigration Law & Expedition Track • 2026 Statutory Update",
+  overline: "Immigration & Expedition Track • 2026 Regulations Update",
   title: FEATURED_COURSE.title,
   subtitle:
-    "The authoritative legal masterclass for skilled workers, IT specialists, and international professionals navigating the Auslandsportal, ZAB equivalence, and consular interviews without procedural delays or administrative rejection.",
+    "The authoritative relocation and visa masterclass for skilled workers, IT specialists, and international professionals navigating the Auslandsportal, ZAB equivalence, and consular interviews without procedural delays or administrative rejection.",
   rating: 4.9,
-  reviewCountLabel: "(480+ enrolled jurists & applicants)",
-  lead: "Mathias Schulze",
-  leadCredential: "(Kammergericht Berlin)",
+  reviewCountLabel: "(480+ enrolled applicants)",
+  lead: "EUVisaAdvice Expert Team",
+  leadCredential: "(Visa & Relocation Specialists)",
   updated: "Jan 2026 (§ 20a & § 18b AufenthG)",
-  language: "Bilingual DE/EN Statutory Templates",
+  language: "Bilingual DE/EN Official Templates",
   specs: [
     "8 Modules",
     "27 Lessons",
     "4h 30m Runtime",
     "Lifetime Course Access",
-    "Full Statutory Dossier Pack",
+    "Full Procedural Dossier Pack",
   ],
   moduleCount: 8,
   lessonCount: 27,
@@ -122,7 +122,7 @@ const PLAYBOOK_DETAIL: CourseDetail = {
     },
     {
       title: "The 3 Layers of Institutional Power",
-      text: "Map jurisdictions precisely: Chancery vs Logistics Contractor (VFS Global/TLScontact) vs Ausländerbehörde.",
+      text: "Map jurisdictions precisely: Embassy/Consulate vs Logistics Contractor (VFS Global/TLScontact) vs Ausländerbehörde.",
     },
     {
       title: "BA Employment Declaration Architecture",
@@ -138,7 +138,7 @@ const PLAYBOOK_DETAIL: CourseDetail = {
     },
     {
       title: "Administrative Remonstration (Widerspruch)",
-      text: "Draft legally binding administrative challenges and diplomatic inquiries if an application is stalled or rejected.",
+      text: "Draft structured administrative challenges and diplomatic inquiries if an application is stalled or rejected.",
     },
   ],
   prerequisites: [
@@ -147,8 +147,8 @@ const PLAYBOOK_DETAIL: CourseDetail = {
       text: "General intention to pursue the EU Blue Card (§ 18b), Qualified Employment (§ 18a), or the points-based Opportunity Card (Chancenkarte § 20a).",
     },
     {
-      label: "No Prior Legal Knowledge Needed:",
-      text: "All regulatory citations (AufenthG, BeschV, VwVfG) are deconstructed into practical step-by-step checklists and bilingual dossier files.",
+      label: "No Prior Immigration Knowledge Needed:",
+      text: "All regulatory requirements (AufenthG, BeschV, VwVfG) are deconstructed into practical step-by-step checklists and bilingual dossier files.",
     },
     {
       label: "Document Readiness:",
@@ -157,14 +157,14 @@ const PLAYBOOK_DETAIL: CourseDetail = {
   ],
   modules: MODULES,
   instructor: {
-    name: "Mathias Schulze",
-    title: "Senior Chancery Jurist & Immigration Counsel",
-    location: "Chancery Liaison • Berlin",
-    bio: "Admitted to the Bar at Kammergericht Berlin (#48910) with more than 14 years specializing exclusively in high-skilled corporate migration, diplomatic remonstrations, and administrative immigration appeals across the Federal Republic.",
+    name: "EUVisaAdvice Expert Team",
+    title: "Senior Relocation & Visa Advisory Specialists",
+    location: "Advisory Liaison • Berlin & Frankfurt",
+    bio: "Specializing in high-skilled corporate migration, qualification recognition, and administrative visa pathways across Germany and the European Union for more than 14 years.",
     stats: [
       { icon: "workspace_premium", value: "500+", label: "Successful Relocations", tone: "primary" },
-      { icon: "task_alt", value: "98.2%", label: "Approval Rate", tone: "success" },
-      { icon: "menu_book", label: "Author, German Chancery Practice (2025 Ed.)", tone: "muted" },
+      { icon: "task_alt", value: "98.2%", label: "Consular Approval Rate", tone: "success" },
+      { icon: "menu_book", label: "Authors, German Relocation Practice Guide", tone: "muted" },
     ],
   },
   reviews: [
@@ -180,7 +180,7 @@ const PLAYBOOK_DETAIL: CourseDetail = {
       role: "Clinical Researcher → Berlin",
       context: "Consulate São Paulo • Chancenkarte",
       quote:
-        "Module 06's Remonstration guide is gold. When my qualification points were miscalculated by the logistics processor, I used Attorney Schulze's formal administrative clarification letter. My visa was approved 8 calendar days later.",
+        "Module 06's Remonstration guide is gold. When my qualification points were miscalculated by the logistics processor, I used the team's formal administrative clarification letter. My visa was approved 8 calendar days later.",
     },
   ],
   faqs: [
@@ -190,14 +190,14 @@ const PLAYBOOK_DETAIL: CourseDetail = {
         "Yes. All modules, checklists, and document templates include the recent modifications to the Chancenkarte points schedule (§ 20a AufenthG), lowered salary thresholds for the EU Blue Card, and updated Federal Employment Agency (BA) internal testing rules.",
     },
     {
-      question: "Are document checklists and statutory templates regularly reviewed?",
+      question: "Are document checklists and templates regularly reviewed?",
       answer:
-        "Yes. All document organizers, bilingual exhibits, and cover letter templates are routinely audited by chancery jurists against updated BMI and Auswärtiges Amt procedural directives. For bespoke legal representation, course members receive a credit toward private retainer services.",
+        "Yes. All document organizers, bilingual exhibits, and cover letter templates are routinely audited by accredited visa specialists against updated BMI and Auswärtiges Amt procedural directives.",
     },
     {
       question: "How long do I maintain access to the masterclass content and updates?",
       answer:
-        "Enrollment grants lifetime access. As German statutory regulations shift or embassy digital portals evolve, masterclass videos and documentation kits are refreshed at no additional charge.",
+        "Enrollment grants lifetime access. As German immigration regulations shift or embassy digital portals evolve, masterclass videos, e-books, and documentation kits are refreshed at no additional charge.",
     },
     {
       question: "What if my planned visa category differs (e.g., Freelance § 21 or Family Reunion § 28)?",
@@ -206,18 +206,18 @@ const PLAYBOOK_DETAIL: CourseDetail = {
     },
   ],
   legalNotice:
-    "This masterclass constitutes specialized legal instruction, procedural education, and document preparation frameworks. It does not establish an individualized attorney-client representation contract until a separate power of attorney (Vollmacht) is executed with EUVisaAdvice Chancery Partners. While curriculum templates reflect statutory compliance standards of the German Federal Foreign Office (Auswärtiges Amt), official visa issuance remains subject to sovereign consular discretion.",
+    "EUVisaAdvice Academy is an educational and document preparation platform, not a law firm. This masterclass constitutes specialized procedural training, educational materials, and practical filing frameworks. It does not establish an attorney-client relationship, nor constitute formal legal representation or legal advice. While curriculum templates reflect official standards of the German Federal Foreign Office (Auswärtiges Amt), official visa issuance remains subject to sovereign consular discretion.",
   purchase: {
     price: 189,
     listPrice: 299,
     discountLabel: "36% OFF",
-    kitNote: "Full 2026 Legal Dossier Kit Included",
+    kitNote: "Full 2026 Dossier Kit + E-Book (PDF) Included",
     guarantee: "14-day money-back guarantee",
     features: [
-      { strong: "4.5 hours", text: " on-demand legal video & audio breakdowns" },
+      { strong: "4.5 hours", text: " on-demand video & audio breakdowns" },
+      { strong: "180-page E-Book (PDF)", text: " with complete relocation blueprints" },
       { strong: "14 downloadable templates", text: " & checklists (PDF & DOCX)" },
-      { strong: "Consular Blueprint Pack", text: " with 14 statutory templates" },
-      { strong: "Lifetime Access", text: " with ongoing statutory updates" },
+      { strong: "Lifetime Access", text: " with ongoing immigration updates" },
       { text: "Cross-platform access: Web, iPadOS, iOS & Android" },
       { text: "Bundesagentur für Arbeit compliance updates feed" },
     ],

@@ -33,15 +33,14 @@ export function CounselNotice() {
         <Icon className="text-[20px] text-text-muted shrink-0 mt-0.5" name="policy" />
         <div className="space-y-1">
           <p className="font-label-interactive text-[0.8125rem] text-text-secondary">
-            Statutory Compliance &amp; Counsel Notice
+            Educational Advisory &amp; Compliance Notice
           </p>
           <p className="font-body-muted text-[0.75rem] text-text-muted leading-relaxed">
-            <strong className="text-text-secondary">General information only:</strong> EUVisaAdvice Academy provides
-            structured advisory curricula and operational methodology concerning German and EU immigration processes.
-            This academy track does not constitute bespoke legal representation and cannot replace formal retention of
-            licensed German legal counsel (<span className="text-text-secondary">Rechtsanwalt</span>). Embassy
-            jurisdiction rules, statutory fees, and waiting lists are determined by consular discretion and subject to
-            updates.
+            <strong className="text-text-secondary">Educational platform:</strong> EUVisaAdvice Academy is an educational
+            platform that provides structured relocation courses, video masterclasses, and practical filing playbooks.
+            It is not a law firm, does not provide legal representation, and cannot replace individual legal counsel.
+            Embassy jurisdiction rules, required fees, and processing waiting lists are determined by official consular
+            authorities and subject to change.
           </p>
         </div>
       </div>

@@ -128,9 +128,9 @@ export function TextLessonSyllabus({ syllabus, courseSlug }: { syllabus: Syllabu
       </div>
 
       <div className="p-space-md rounded-xl bg-surface-level-1 shadow-sm flex items-center gap-space-sm">
-        <Icon className="text-primary text-[22px]" name="gavel" />
+        <Icon className="text-primary text-[22px]" name="auto_stories" />
         <div>
-          <p className="font-title-card text-[0.8125rem] text-text-primary font-semibold">Chancery-Grade Syllabus</p>
+          <p className="font-title-card text-[0.8125rem] text-text-primary font-semibold">Comprehensive Syllabus</p>
           <p className="font-body-muted text-[0.75rem] text-text-secondary">Updated for 2026 Auslandsportal rollouts</p>
         </div>
       </div>

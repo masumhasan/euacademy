@@ -4,11 +4,11 @@ import { useState } from "react";
 import { Icon } from "@/components/ui/Icon";
 import { Field, SelectField } from "../forms/Field";
 
-const JURISTS = [
-  "Mathias Schulze, RA (Kammergericht Berlin)",
-  "Dr. Elena Rostova, LL.M. (EU Mobility Specialist)",
-  "Julian von Bernstorff, Jurist (Schengen Visa Appeals)",
-  "Claire Delacroix, Avocat au Barreau de Paris",
+const INSTRUCTORS = [
+  "EUVisaAdvice Expert Team",
+  "Dr. Elena Rostova (EU Mobility Specialist)",
+  "Julian von Bernstorff (Schengen Visa Appeals)",
+  "Claire Delacroix (European Relocation Advisor)",
 ];
 const LEVELS = [
   "Advanced / Skilled Self-Filer",
@@ -17,8 +17,8 @@ const LEVELS = [
   "Executive & Founder Relocation",
 ];
 const STATS = [
-  { label: "Statutory Modules", value: "6", unit: "Modules" },
-  { label: "Total Lessons", value: "18", unit: "Lectures" },
+  { label: "Course Modules", value: "6", unit: "Modules" },
+  { label: "Total Lessons", value: "18", unit: "Chapters" },
   { label: "Video & Advisory Runtime", value: "3.5", unit: "Hours" },
 ];
 
@@ -36,15 +36,15 @@ export function AccreditationCard() {
     <div className="bg-surface-level-2 rounded-xl p-space-md sm:p-space-lg shadow-md">
       <div className="flex items-center justify-between mb-space-md">
         <div className="flex items-center gap-2">
-          <Icon className="text-primary text-[22px]" name="gavel" />
-          <h2 className="font-title-card text-title-card text-text-primary">Legal Jurisdiction &amp; Statutory Accreditation</h2>
+          <Icon className="text-primary text-[22px]" name="verified" />
+          <h2 className="font-title-card text-title-card text-text-primary">Immigration Framework &amp; Course Accreditation</h2>
         </div>
         <span className="font-label-caps text-label-caps text-tertiary bg-tertiary-container/10 px-2.5 py-1 rounded-md uppercase font-semibold">
           BAMF Compliant
         </span>
       </div>
       <div className="space-y-space-md">
-        <Field htmlFor="statute-input" label="Statutory Authority & Legal Directives">
+        <Field htmlFor="statute-input" label="Regulatory Authority &amp; Directives">
           <div className="flex flex-wrap items-center gap-2 p-2 bg-surface-level-1 rounded-lg">
             {tags.map((tag) => (
               <span
@@ -79,8 +79,8 @@ export function AccreditationCard() {
           </div>
         </Field>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-space-md">
-          <Field htmlFor="lead-jurist" label="Lead Accredited Jurist" required>
-            <SelectField icon="expand_more" id="lead-jurist" options={JURISTS} />
+          <Field htmlFor="lead-instructor" label="Lead Instructor / Author" required>
+            <SelectField icon="expand_more" id="lead-instructor" options={INSTRUCTORS} />
           </Field>
           <Field htmlFor="audience-level" label="Applicant Target Level">
             <SelectField icon="expand_more" id="audience-level" options={LEVELS} />

@@ -185,7 +185,7 @@ export function CourseRow({ course }: { course: StudioCourse }) {
                 className="px-space-sm py-1.5 rounded bg-status-warning/20 text-status-warning hover:bg-status-warning/30 transition-colors font-label-interactive text-label-interactive text-xs font-semibold"
                 type="button"
               >
-                Submit for Bar Review
+                Submit for Quality Review
               </button>
             </>
           )}

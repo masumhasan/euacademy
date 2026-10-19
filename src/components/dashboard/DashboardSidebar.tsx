@@ -82,7 +82,7 @@ function DocumentsCard() {
   return (
     <div className={CARD}>
       <div className="flex items-center justify-between">
-        <span className={CARD_TITLE}>Chancery Legal Documents</span>
+        <span className={CARD_TITLE}>Course &amp; Relocation Documents</span>
         <span className="font-label-code text-text-muted text-[0.75rem]">2 Verified</span>
       </div>
       <div className="flex flex-col gap-space-xs">

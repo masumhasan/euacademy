@@ -8,7 +8,7 @@ const RELOCATION = "moving-to-germany-housing-insurance-anmeldung";
 
 export const DASHBOARD = {
   welcome: {
-    badge: "Chancery Matriculation Active",
+    badge: "Enrolled Student Account Active",
     dossierId: "DOSSIER-ID: DE-2026-8841-B",
     title: "Welcome back, Alexander von Berg",
     verified: "Applicant Dossier Verified",
@@ -44,7 +44,7 @@ export const DASHBOARD = {
       percent: 60,
     },
     {
-      label: "Chancery Pre-Approvals",
+      label: "Dossier Pre-Approvals",
       icon: "verified_user",
       iconClass: "text-primary",
       value: "2",
@@ -59,10 +59,10 @@ export const DASHBOARD = {
     lastActive: "Last active 2h ago",
     status: "Consular Portal Intake Ready",
     title: "The German National Visa Playbook & Opportunity Card Masterclass",
-    module: "Module 01: Statutory Field Verification on Consular Services Portal",
+    module: "Module 01: Field Verification on Consular Services Portal",
     lessonTitle: "Lesson 1.2: Mastering Data Validation & Avoiding Instant Reject Flags",
     lessonDescription:
-      "Crucial statutory field rules for Section 18b candidates entering non-EU employment contracts.",
+      "Crucial procedural field rules for Section 18b candidates entering non-EU employment contracts.",
     progressLabel: "Progress: 18 of 27 Lessons Completed",
     percent: 68,
     resumeHref: ROUTES.lesson(PLAYBOOK, DEMO_LESSON_IDS.video),
@@ -72,7 +72,7 @@ export const DASHBOARD = {
     { id: "progress", label: "In Progress", count: 3 },
     { id: "completed", label: "Completed", count: 1 },
     { id: "saved", label: "Saved & Bookmarked", count: 2 },
-    { id: "notes", label: "Consultant Notes", count: 4 },
+    { id: "notes", label: "Advisor Notes", count: 4 },
   ],
   courses: [
     {
@@ -81,7 +81,7 @@ export const DASHBOARD = {
       categoryClass: "bg-gold-subtle-fill text-primary",
       module: "Module 01 / 04",
       title: "The German National Visa Playbook & Opportunity Card",
-      instructor: "Mathias Schulze & Legal Team",
+      instructor: "EUVisaAdvice Team",
       lessons: "27 Lessons (12h total)",
       percent: 68,
       completed: "18/27 Completed",
@@ -99,7 +99,7 @@ export const DASHBOARD = {
       categoryClass: "bg-surface-level-1 text-tertiary",
       module: "Module 02 / 05",
       title: "EU Blue Card Application Masterclass: Section 18g Fast-Track",
-      instructor: "Clara Becker, LL.M.",
+      instructor: "Clara Becker, Senior Advisor",
       lessons: "19 Lessons (8.5h total)",
       percent: 35,
       completed: "7/19 Completed",
@@ -118,7 +118,7 @@ export const DASHBOARD = {
       categoryClass: "bg-surface-level-1 text-secondary",
       module: "Module 01 / 03",
       title: "Moving to Germany — Housing, Health Insurance & Anmeldung",
-      instructor: "Dipl.-Jur. Florian Weber",
+      instructor: "Florian Weber, Relocation Specialist",
       lessons: "14 Lessons (6.0h total)",
       percent: 15,
       completed: "2/14 Completed",
@@ -126,20 +126,20 @@ export const DASHBOARD = {
       barClass: "bg-secondary",
       nextIcon: "play_circle",
       nextIconClass: "text-secondary",
-      nextUp: "Lesson 02: Statutory Health Insurance (GKV vs PKV) for Visa Consular Interview",
+      nextUp: "Lesson 02: Health Insurance (GKV vs PKV) for Visa Consular Interview",
       primaryCta: false,
       href: ROUTES.courseOverview(RELOCATION),
     },
   ],
   liveCohort: {
-    title: "Next Live Chancery Briefing Cohort",
-    text: "Thursday at 17:00 CET • Live review of consular declaration annexes with Attorney Mathias Schulze",
+    title: "Next Live Advisory Briefing Cohort",
+    text: "Thursday at 17:00 CET • Live review of consular declaration annexes with Senior Visa Advisor",
   },
   qaHref: ROUTES.lesson(PLAYBOOK, DEMO_LESSON_IDS.video),
   consultant: {
-    name: "Clara Becker, Jur. Advisor",
-    registry: "Kammergericht Berlin Registered",
-    response: "Chancery Mobility Advisor",
+    name: "Clara Becker, Senior Advisor",
+    registry: "Certified Relocation Specialist",
+    response: "Visa Mobility Advisor",
     note: "\"Alexander, your qualification dossier is currently well-aligned for § 18b fast-track. Ensure your employment contract annex includes the overtime compensation clause before Monday's review.\"",
   },
   milestones: [
@@ -162,7 +162,7 @@ export const DASHBOARD = {
     {
       text: "\"Regarding salary threshold for bottleneck jobs (Mangelberufe) in 2026...\"",
       icon: "check_circle",
-      status: "Answered by Mathias Schulze",
+      status: "Answered by Senior Advisor",
       time: "4h ago",
     },
     {

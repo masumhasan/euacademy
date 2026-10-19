@@ -2,9 +2,9 @@ import { Icon } from "@/components/ui/Icon";
 
 const REASONS = [
   {
-    icon: "balance",
-    title: "Licensed Immigration Consultants & Jurists",
-    text: "Curriculums authored and maintained exclusively by accredited European immigration specialists and chancery counsel.",
+    icon: "verified_user",
+    title: "Accredited Immigration Specialists",
+    text: "Curriculums authored and maintained exclusively by experienced European immigration consultants and relocation specialists.",
   },
   {
     icon: "inventory",
@@ -18,7 +18,7 @@ const REASONS = [
   },
   {
     icon: "update",
-    title: "Continuous Statutory & Policy Updates",
+    title: "Continuous Policy & Directive Updates",
     text: "Regularly revised modules reflecting real-time changes in EU immigration directives and consular ordinances.",
   },
 ];
@@ -33,8 +33,8 @@ export function WhyLearnSection() {
           </span>
           <h3 className="font-headline-lg text-headline-lg text-text-primary mt-1">Why learn with EUVisaAdvice</h3>
           <p className="font-body-muted text-body-muted text-text-secondary mt-2">
-            Designed by practicing German &amp; European immigration jurists to replace consular guesswork with proven
-            chancery-level dossiers.
+            Designed by seasoned European immigration specialists to replace consular guesswork with proven,
+            submission-ready dossiers.
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-lg">

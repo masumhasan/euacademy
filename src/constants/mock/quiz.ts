@@ -16,7 +16,7 @@ export const QUIZ = {
     percent: 75,
     lessons: [
       { title: "1. Three layers, three authorities", length: "8 min", lessonId: "0-2" },
-      { title: "2. The legal spine in 5 provisions", length: "14 min", lessonId: "0-2" },
+      { title: "2. The regulatory framework in 5 provisions", length: "14 min", lessonId: "0-2" },
       { title: "3. 2025/2026 Reforms & common errors", length: "12 min", lessonId: "0-2" },
     ],
     activeLabel: "Module Check • 3 questions",
@@ -26,9 +26,9 @@ export const QUIZ = {
     kicker: "Module 00",
     type: "Knowledge Assessment",
     title: "Check yourself: How the system really works",
-    introTitle: "Statutory Reasoning Assessment",
+    introTitle: "Regulatory Knowledge Assessment",
     intro:
-      "Three questions. Every answer choice comes with statutory reasoning, so a wrong pick is worth more than a right one. Complete all 3 validation checks with 100% precision to unlock Module 01.",
+      "Three questions. Every answer choice comes with practical reasoning, so a wrong pick is worth more than a right one. Complete all 3 validation checks with 100% precision to unlock Module 01.",
   },
   questions: [
     {
@@ -48,8 +48,8 @@ export const QUIZ = {
     },
     {
       id: "q2",
-      label: "Question 2 of 3 • Legal Remedies & Timelines",
-      prompt: "You receive a formal refusal notice dated 12 March 2026. What legal remedy is immediately available?",
+      label: "Question 2 of 3 • Available Remedies & Timelines",
+      prompt: "You receive a formal refusal notice dated 12 March 2026. What official remedy is immediately available?",
       options: [
         "Informal remonstration within a one-year statutory window",
         "Formal remonstration within one month (or direct administrative action before VG Berlin)",
@@ -59,12 +59,12 @@ export const QUIZ = {
     },
     {
       id: "q3",
-      label: "Question 3 of 3 • Filing Legality & Dates",
+      label: "Question 3 of 3 • Filing Status & Dates",
       prompt:
-        "Does registering an account and submitting metadata in the Consular Services Portal count as legally filing the application?",
+        "Does registering an account and submitting metadata in the Consular Services Portal count as officially filing the application?",
       options: [
-        "Yes, the exact timestamp of portal profile transmission constitutes legal filing",
-        "No — the application becomes legally effective upon biometric verification and in-person lodgement",
+        "Yes, the exact timestamp of portal profile transmission constitutes official filing",
+        "No — the application becomes effective upon biometric verification and in-person lodgement",
         "Only for applicants operating under expedited corporate Blue Card agency accords",
       ],
       correct: 1,
@@ -73,5 +73,5 @@ export const QUIZ = {
   /** Question 1 is shown answered in the design. */
   initialAnswers: { q1: 1 } as Record<string, number>,
   disclaimer:
-    "EUVisaAdvice Academy provides structured education and statutory breakdowns on European immigration procedures. This module does not constitute an attorney-client relationship nor bespoke formal legal representation. Visa regulations, processing times, and mission directives are subject to regional variations.",
+    "EUVisaAdvice Academy is an educational platform providing structured relocation guides and procedural breakdowns on European immigration. It is not a law firm and does not provide legal advice or legal representation. Visa regulations, processing times, and mission directives are subject to regional variations.",
 };

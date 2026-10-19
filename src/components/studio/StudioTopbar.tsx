@@ -34,10 +34,10 @@ export function StudioTopbar({ onToggleSidebar }: { onToggleSidebar?: () => void
         <div className="flex items-center gap-space-sm">
           <div className="flex-col text-right hidden sm:flex">
             <span className="font-label-interactive text-label-interactive text-text-primary leading-tight">
-              Mathias Schulze, RA
+              EUVisaAdvice Team
             </span>
             <span className="font-label-caps text-label-caps text-primary tracking-wider uppercase">
-              Lead Jurist &amp; Admin
+              Course Director &amp; Admin
             </span>
           </div>
           <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center">

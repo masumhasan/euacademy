@@ -18,14 +18,28 @@ export function CourseCard({ course }: { course: CourseSummary }) {
             src={course.image}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-surface-level-2 via-transparent to-black/20" />
-          <div className="absolute top-3 left-3">
+          <div className="absolute top-3 left-3 flex items-center gap-1.5 flex-wrap">
             <span className="px-2.5 py-1 rounded-md text-[11px] font-label-code font-semibold bg-surface-base/80 text-primary border border-gold-hairline backdrop-blur-sm">
               {course.badge}
             </span>
+            {course.format === "ebook" && (
+              <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[11px] font-label-code font-semibold bg-primary/20 text-primary border border-primary/40 backdrop-blur-sm">
+                <Icon className="text-[13px]" name="auto_stories" />
+                <span>PDF E-Book</span>
+              </span>
+            )}
+            {course.format === "bundle" && (
+              <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[11px] font-label-code font-semibold bg-secondary/20 text-secondary border border-secondary/40 backdrop-blur-sm">
+                <Icon className="text-[13px]" name="all_inclusive" />
+                <span>Bundle</span>
+              </span>
+            )}
           </div>
           <div className="absolute bottom-3 right-3">
             <span className="px-2 py-0.5 rounded text-[11px] font-label-code bg-black/60 text-white backdrop-blur-sm">
-              {course.moduleCount} Modules • {course.lessonCount} Lessons
+              {course.format === "ebook"
+                ? `${course.pageCount ?? 168} Pages • PDF Guide`
+                : `${course.moduleCount} Modules • ${course.lessonCount} Lessons`}
             </span>
           </div>
         </Link>

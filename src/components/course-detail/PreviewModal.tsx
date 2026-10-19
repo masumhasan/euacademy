@@ -48,7 +48,7 @@ export function PreviewModal({ title, image, lessonHref, onClose }: PreviewModal
         <VideoPlayer autoPlay poster={image} />
         <div className="px-space-md py-space-sm bg-surface-level-2 flex items-center justify-between gap-space-sm flex-wrap">
           <p className="font-body-muted text-text-secondary text-[0.8125rem]">
-            You are streaming the public chancery overview of statutory jurisdiction mapping.
+            You are streaming the introductory lesson preview on consular jurisdiction mapping.
           </p>
           <Link
             className="inline-block px-4 py-2 rounded bg-primary text-on-primary font-label-interactive text-label-interactive hover:bg-gold-hover transition-colors"

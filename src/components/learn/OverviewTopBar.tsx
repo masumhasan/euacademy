@@ -17,7 +17,7 @@ export function OverviewTopBar() {
       </nav>
       <div className="flex items-center gap-space-md">
         <span className="inline-flex items-center gap-1.5 px-space-sm py-1 rounded bg-status-success-bg text-status-success font-label-code text-[0.75rem]">
-          <span className="w-1.5 h-1.5 rounded-full bg-status-success" /> Statutory Corpus 2026 • Verified
+          <span className="w-1.5 h-1.5 rounded-full bg-status-success" /> Regulations Corpus 2026 • Verified
         </span>
         <span className="font-label-code text-[0.75rem] text-text-muted">Rev: 26.4.19</span>
       </div>

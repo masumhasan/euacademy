@@ -18,7 +18,7 @@ export function InstructorSection({ instructor }: { instructor: CourseInstructor
       <div className="flex flex-col sm:flex-row gap-space-md items-start">
         <div className="relative flex-shrink-0">
           <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-xl bg-surface-level-2 border border-gold-hairline overflow-hidden flex items-center justify-center">
-            <Icon className="text-primary text-[48px]" name="gavel" />
+            <Icon className="text-primary text-[48px]" name="school" />
           </div>
           <div className="absolute -bottom-2 -right-2 p-1 rounded-full bg-surface-base border border-gold-hairline">
             <Icon className="text-status-success text-[16px]" filled name="verified" />

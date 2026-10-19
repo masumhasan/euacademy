@@ -53,7 +53,7 @@ export const BUILDER_MODULES: BuilderModule[] = [
       {
         id: "0.1",
         number: "0.1",
-        title: "The Statutory Architecture & The 3 Powers of German Immigration",
+        title: "The Practical Architecture & The 3 Powers of German Immigration",
         kind: "video",
         kindLabel: "Video Masterclass",
         detail: "08:14",
@@ -62,15 +62,15 @@ export const BUILDER_MODULES: BuilderModule[] = [
       {
         id: "0.2",
         number: "0.2",
-        title: "The Legal Spine in 5 Provisions (AufenthG Core Rules)",
+        title: "The Core Regulatory Framework in 5 Provisions (AufenthG Rules)",
         kind: "audio",
-        kindLabel: "Audio + Jurist Dossier",
+        kindLabel: "Audio + Course Dossier",
         detail: "09:50",
       },
       {
         id: "0.3",
         number: "0.3",
-        title: "Module 00 Verification & Statutory Check",
+        title: "Module 00 Verification & Gateway Check",
         kind: "quiz",
         kindLabel: "Mandatory Gateway Quiz",
         detail: "3 Questions (80% Pass)",
@@ -117,7 +117,7 @@ export const BUILDER_TABS = [
   { icon: "tune", label: "Course Settings" },
   { icon: "payments", label: "Payoneer Pricing & Tiers" },
   { icon: "folder_special", label: "Dossier Resources", badge: "14" },
-  { icon: "gavel", label: "Completion Rules & Exam" },
+  { icon: "fact_check", label: "Completion Rules & Exam" },
 ];
 
 export const LESSON_VIDEO = {
@@ -162,10 +162,10 @@ export const LESSON_COMMENTARY = {
     { title: "2. Ausländerbehörde (LEA)", text: "Internal municipal foreigners authority. Substantive statutory clearance for residence." },
     { title: "3. Bundesagentur für Arbeit (BA)", text: "Federal Employment Agency. Labor market testing (ZAV) under § 39 AufenthG." },
   ],
-  noteTitle: "Statutory Advisory Note (§ 71 Abs. 2 AufenthG)",
+  noteTitle: "Advisory Guidance Note (§ 71 Abs. 2 AufenthG)",
   noteBefore:
     "External outsourced commercial intake providers (e.g., VFS Global, TLScontact) serve exclusively as postal couriers and document-receiving depots. They have ",
-  noteStrong: "strictly zero legal adjudicative authority",
+  noteStrong: "strictly zero adjudicative authority",
   noteAfter:
-    ". Any claim by intake clerks demanding non-statutory documents must be politely contested using our provided Chancery Pre-Clearance Citation Sheet.",
+    ". Any claim by intake clerks demanding non-statutory documents must be politely contested using our provided Pre-Clearance Citation Sheet.",
 };

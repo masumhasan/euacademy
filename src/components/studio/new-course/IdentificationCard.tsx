@@ -13,16 +13,22 @@ const CATEGORIES = [
   "Family Reunification & Spousal Visas ( 27-36)",
   "ICT Intra-Corporate Transfer Directive (2014/66/EU)",
 ];
+const FORMATS = [
+  { id: "video", label: "Video Masterclass", icon: "play_circle", hint: "Video modules + assets" },
+  { id: "ebook", label: "E-Book / PDF Course", icon: "auto_stories", hint: "Downloadable PDF playbook" },
+  { id: "bundle", label: "Complete Bundle", icon: "all_inclusive", hint: "Video + companion E-Book" },
+];
+
 const TOOLBAR = [
   { icon: "format_bold", title: "Bold" },
   { icon: "format_italic", title: "Italic" },
   null,
   { icon: "format_list_bulleted", title: "Bullet List" },
   { icon: "format_list_numbered", title: "Numbered List" },
-  { icon: "format_quote", title: "Insert Statutory Quote" },
-  { icon: "link", title: "Link Law Article" },
+  { icon: "format_quote", title: "Insert Official Quote" },
+  { icon: "link", title: "Link Reference" },
   null,
-  { icon: "code", title: "Legal Code" },
+  { icon: "code", title: "Reference Code" },
 ];
 
 const slugify = (value: string) =>
@@ -37,6 +43,7 @@ export const DEFAULT_SLUG = "chancenkarte-opportunity-card";
 export function IdentificationCard({ onSlugChange }: { onSlugChange: (slug: string) => void }) {
   const [slug, setSlug] = useState(DEFAULT_SLUG);
   const [language, setLanguage] = useState("English");
+  const [format, setFormat] = useState("video");
 
   function updateSlug(next: string) {
     setSlug(next);
@@ -52,11 +59,38 @@ export function IdentificationCard({ onSlugChange }: { onSlugChange: (slug: stri
           <h2 className="font-title-card text-title-card text-text-primary">Course Identification &amp; Overview</h2>
         </div>
         <span className="font-label-code text-label-code text-primary bg-surface-level-1 px-2.5 py-1 rounded-md">
-          ID: MSTR-2026-CHNC
+          ID: MSTR-2026-ACAD
         </span>
       </div>
       <div className="space-y-space-md">
-        <Field hint="Official public title as registered in chancery registry & marketplace" htmlFor="course-title" label="Masterclass Title" required>
+        <Field hint="Choose whether you are offering video lessons, a standalone e-book guide, or both" label="Course Delivery Format" required>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
+            {FORMATS.map((item) => {
+              const active = item.id === format;
+              return (
+                <button
+                  key={item.id}
+                  className={cn(
+                    "flex flex-col text-left p-3 rounded-lg border transition-all text-xs",
+                    active
+                      ? "bg-primary-container/20 border-primary text-primary"
+                      : "bg-surface-level-1 border-transparent hover:bg-surface-elevated text-text-secondary"
+                  )}
+                  onClick={() => setFormat(item.id)}
+                  type="button"
+                >
+                  <div className="flex items-center gap-1.5 font-label-interactive text-label-interactive font-medium">
+                    <Icon className="text-[18px]" name={item.icon} />
+                    <span>{item.label}</span>
+                  </div>
+                  <span className="font-body-muted text-[11px] text-text-muted mt-1">{item.hint}</span>
+                </button>
+              );
+            })}
+          </div>
+        </Field>
+
+        <Field hint="Official public title as registered in academy registry & marketplace" htmlFor="course-title" label="Masterclass Title" required>
           <input
             className={INPUT_CLASS}
             defaultValue="Germany Opportunity Card (Chancenkarte) Masterclass"
@@ -133,7 +167,7 @@ export function IdentificationCard({ onSlugChange }: { onSlugChange: (slug: stri
         <div className="space-y-1.5 pt-1">
           <div className="flex items-center justify-between">
             <label className="font-label-interactive text-label-interactive text-text-primary" htmlFor="course-syllabus">
-              Statutory Syllabus &amp; Applicant Blueprint
+              Procedural Syllabus &amp; Applicant Blueprint
             </label>
             <span className="font-label-code text-label-code text-text-muted">Markdown Supported</span>
           </div>
@@ -157,9 +191,9 @@ export function IdentificationCard({ onSlugChange }: { onSlugChange: (slug: stri
             </div>
             <textarea
               className="w-full bg-transparent text-on-surface p-space-md font-body-default text-body-default focus:outline-none resize-y"
-              defaultValue="This intensive chancery masterclass equips international applicants with an end-to-end procedural filing framework under the newly reformed § 20a AufenthG (Opportunity Card / Chancenkarte). Jurist-led modules cover: 1. Preliminary points computation across age, language proficiency (Goethe/TestDaF), and recognized academic credentials (ZAB / anabin). 2. Blocking account setups (Sperrkonto) matching statutory subsistence thresholds (€1,027/mo). 3. Vetting of supplementary part-time work rights and trial employment protocols (§ 20a Abs. 4)."
+              defaultValue="This intensive masterclass equips international applicants with an end-to-end procedural filing framework under the newly reformed § 20a AufenthG (Opportunity Card / Chancenkarte). Advisor-led modules cover: 1. Preliminary points computation across age, language proficiency (Goethe/TestDaF), and recognized academic credentials (ZAB / anabin). 2. Blocking account setups (Sperrkonto) matching subsistence thresholds (€1,027/mo). 3. Vetting of supplementary part-time work rights and trial employment protocols (§ 20a Abs. 4)."
               id="course-syllabus"
-              placeholder="Detail what applicants will accomplish, document vetting guidelines, proof of funds mechanics, and consular defense strategies..."
+              placeholder="Detail what applicants will accomplish, document checklist guidelines, proof of funds mechanics, and consular preparation strategies..."
               rows={6}
             />
           </div>

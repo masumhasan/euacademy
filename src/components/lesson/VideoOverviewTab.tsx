@@ -107,7 +107,7 @@ export function VideoOverviewTab({ lesson }: { lesson: Lesson }) {
           <div className="flex items-center justify-between">
             <span className="font-label-caps text-label-caps text-primary uppercase">Lead Instructor</span>
             <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-elevated text-status-success font-label-code text-[0.6875rem]">
-              <span className="w-1.5 h-1.5 rounded-full bg-status-success" /> Bar Admitted
+              <span className="w-1.5 h-1.5 rounded-full bg-status-success" /> Verified Faculty
             </span>
           </div>
           <div className="flex items-center gap-space-md">

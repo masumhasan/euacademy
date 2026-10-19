@@ -29,7 +29,7 @@ export function QuizView({ courseSlug }: { courseSlug: string }) {
         <div className="bg-surface-level-2 p-space-lg rounded-xl flex items-start gap-space-md shadow-md relative overflow-hidden">
           <div className="w-1.5 absolute left-0 top-0 bottom-0 bg-primary" />
           <div className="w-10 h-10 rounded-lg bg-gold-subtle-fill flex items-center justify-center text-primary flex-shrink-0">
-            <Icon className="text-[24px]" name="gavel" />
+            <Icon className="text-[24px]" name="fact_check" />
           </div>
           <div className="flex flex-col gap-1 min-w-0">
             <span className="font-title-card text-title-card text-text-primary">{header.introTitle}</span>

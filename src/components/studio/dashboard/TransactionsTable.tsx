@@ -13,7 +13,7 @@ export function TransactionsTable() {
         <div className="flex items-center justify-between pb-space-sm mb-space-sm border-b border-border-neutral">
           <div>
             <h2 className="font-title-card text-title-card text-text-primary">Recent Payoneer Transactions &amp; Settlements</h2>
-            <p className="font-body-muted text-body-muted text-text-muted">Direct chancery escrow debits &amp; automated receipting</p>
+            <p className="font-body-muted text-body-muted text-text-muted">Direct platform course debits &amp; automated receipting</p>
           </div>
           <button className="text-text-muted hover:text-text-primary text-xs font-label-code flex items-center gap-1 transition-colors" type="button">
             <Icon className="text-[16px]" name="refresh" />

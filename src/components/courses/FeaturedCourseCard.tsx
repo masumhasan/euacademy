@@ -59,10 +59,10 @@ export function FeaturedCourseCard({ course }: { course: FeaturedCourse }) {
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md pt-2">
               <div className="flex items-center gap-3">
                 <div className="w-11 h-11 rounded-full bg-surface-level-2 border border-gold-hairline flex items-center justify-center overflow-hidden">
-                  <Icon className="text-primary text-[22px]" name="gavel" />
+                  <Icon className="text-primary text-[22px]" name="school" />
                 </div>
                 <div>
-                  <p className="text-xs text-text-muted font-label-code">Lead Instructors</p>
+                  <p className="text-xs text-text-muted font-label-code">Course Faculty</p>
                   <p className="font-label-interactive text-text-primary text-sm">{course.instructors}</p>
                 </div>
               </div>

@@ -15,7 +15,7 @@ export const LEARN_OVERVIEW: LearnOverview = {
     },
     {
       title: "Execute Flawless Digital Submissions",
-      text: "Register, file, and submit through the official Consular Services Portal without the common syntactic and data entry errors that render applications legally defective or cause unrecoverable resets.",
+      text: "Register, file, and submit through the official Consular Services Portal without the common syntactic and data entry errors that render applications defective or cause unrecoverable resets.",
     },
     {
       title: "Survive Formal Completeness Checks",
@@ -74,7 +74,7 @@ export const LEARN_OVERVIEW: LearnOverview = {
       lessons: 3,
       minutes: 28,
       description:
-        "Biometrics capture, window interview dynamics, fee receipts, distinguishing mandatory legal criteria from discretionary inquiries.",
+        "Biometrics capture, window interview dynamics, fee receipts, distinguishing mandatory criteria from discretionary inquiries.",
       unlocked: false,
     },
     {
@@ -94,7 +94,7 @@ export const LEARN_OVERVIEW: LearnOverview = {
       lessons: 4,
       minutes: 30,
       description:
-        "Securing file access, actions for failure to act (Untätigkeitsklage), expedited remonstration paths, and scrutinizing official refusal reasons.",
+        "Securing file access, formal follow-up paths, expedited remonstration guidance, and scrutinizing official refusal reasons.",
       unlocked: false,
     },
     {

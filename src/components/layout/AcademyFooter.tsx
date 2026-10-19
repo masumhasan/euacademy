@@ -32,9 +32,9 @@ const COLUMNS: Array<{ title: string; links: FooterLink[] }> = [
   {
     title: "Legal & Regulatory",
     links: [
-      { label: "Terms of Legal Instruction", href: MAIN_SITE_LINKS.terms, external: true },
+      { label: "Terms of Service", href: MAIN_SITE_LINKS.terms, external: true },
       { label: "Privacy & GDPR Disclosure", href: MAIN_SITE_LINKS.privacy, external: true },
-      { label: "Regulatory Disclaimers", href: MAIN_SITE_LINKS.terms, external: true },
+      { label: "Educational Disclaimers", href: MAIN_SITE_LINKS.terms, external: true },
       { label: "Professional Standards", href: MAIN_SITE_LINKS.about, external: true },
       { label: "Security & Encryption Specs", href: MAIN_SITE_LINKS.privacy, external: true },
     ],
@@ -59,11 +59,11 @@ export function AcademyFooter() {
               </span>
             </div>
             <p className="font-body-muted text-body-muted text-text-secondary mb-space-md max-w-sm">
-              Authoritative legal training and structured compliance curriculums for European residence, digital
-              nomad visas, and cross-border corporate relocation.
+              Authoritative educational courses, video masterclasses, and structured relocation playbooks for European residence, digital
+              nomad visas, and skilled worker settlement. EUVisaAdvice Academy is an educational platform, not a law firm.
             </p>
             <div className="font-label-code text-[0.8125rem] text-text-muted space-y-1">
-              <p>Chancery &amp; Legal Liaison: Berlin &amp; Frankfurt am Main, Germany</p>
+              <p>European Advisory Liaison: Berlin &amp; Frankfurt am Main, Germany</p>
               <p>Corporate Operations: 30 N Gould St, Sheridan, WY 82801, USA</p>
             </div>
           </div>
@@ -95,7 +95,7 @@ export function AcademyFooter() {
             © 2025 EUVisaAdvice Academy. All rights reserved. Not affiliated with the European Commission or
             official national consular divisions.
           </p>
-          <p className="font-label-code text-[0.75rem]">Secured with 256-bit Chancery Grade Protocol</p>
+          <p className="font-label-code text-[0.75rem]">Secured with 256-bit TLS Encryption</p>
         </div>
       </div>
     </footer>

@@ -15,13 +15,13 @@ export default function StudioCoursesPage() {
         <div className="max-w-2xl space-y-1">
           <div className="flex items-center gap-space-xs text-primary font-label-caps text-label-caps uppercase tracking-wider">
             <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
-            <span>Chancery Legal Curricula Engine</span>
+            <span>Academy Curricula Engine</span>
           </div>
           <h1 className="font-headline-md text-headline-md text-text-primary tracking-tight">
             Course Management &amp; Curricula Catalog
           </h1>
           <p className="font-body-default text-body-default text-text-secondary">
-            Manage published immigration playbooks, statutory updates, pricing tiers, and enrollment accessibility across
+            Manage published immigration playbooks, curriculum updates, pricing tiers, and enrollment accessibility across
             international jurisdictions.
           </p>
         </div>

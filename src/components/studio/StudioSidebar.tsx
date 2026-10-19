@@ -75,7 +75,7 @@ export function StudioSidebar({
               <div className="flex items-center gap-space-2xs">
                 <span className="w-1.5 h-1.5 rounded-full bg-tertiary" />
                 <span className="font-label-caps text-label-caps text-text-secondary uppercase tracking-wider">
-                  Chancery Desk
+                  Operations Desk
                 </span>
               </div>
               <span className="font-label-code text-label-code text-primary bg-primary-container/20 px-space-2xs py-0.5 rounded">

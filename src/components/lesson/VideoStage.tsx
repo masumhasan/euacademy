@@ -61,7 +61,7 @@ export function VideoStage({ lesson }: { lesson: Lesson }) {
             <span className="relative inline-flex rounded-full h-2 w-2 bg-status-danger" />
           </span>
           <span className="font-label-code text-[0.6875rem] font-semibold tracking-wider text-text-primary uppercase">
-            Live Statutory Recording • Chancery Legal Stream 2026
+            Curriculum Session Recording • Consular Guidance Stream 2026
           </span>
         </div>
         <div className="flex items-center gap-space-sm pointer-events-auto">

@@ -131,7 +131,7 @@ export function LessonEditor({
       <div className="pt-space-sm flex flex-col sm:flex-row items-center justify-between gap-space-md">
         <div className="flex items-center gap-space-xs text-text-muted font-label-code text-label-code text-[12px]">
           <Icon className="text-[18px] text-text-muted" name="history" />
-          <span>Revision {revision} saved 2 mins ago by Mathias Schulze, RA</span>
+          <span>Revision {revision} saved 2 mins ago by Editorial Team</span>
         </div>
         <div className="flex items-center gap-space-sm w-full sm:w-auto justify-end">
           <button

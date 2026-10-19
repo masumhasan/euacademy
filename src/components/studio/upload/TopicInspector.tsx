@@ -82,11 +82,11 @@ export function TopicInspector() {
 
       <div className="bg-surface-level-1/50 rounded-xl p-space-md space-y-2">
         <div className="flex items-center gap-space-xs text-primary">
-          <Icon className="text-[18px]" name="gavel" />
-          <span className="font-label-caps text-label-caps uppercase tracking-wider font-semibold">Chancery Video Standard 2024</span>
+          <Icon className="text-[18px]" name="verified" />
+          <span className="font-label-caps text-label-caps uppercase tracking-wider font-semibold">Consular Video Standard 2026</span>
         </div>
         <p className="font-body-muted text-body-muted text-text-secondary">
-          Ensure all legal citations are overlaid in chapter markers. Video content referencing BAMF procedural guidelines must be marked for re-validation
+          Ensure all official regulatory citations are overlaid in chapter markers. Video content referencing BAMF and Auswärtiges Amt procedural guidelines must be marked for re-validation
           every 90 days.
         </p>
       </div>

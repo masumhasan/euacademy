@@ -16,7 +16,7 @@ export default function SettingsPage() {
     <div className="w-full px-space-lg py-space-lg">
       <div className="max-w-[1440px] mx-auto flex flex-col gap-space-lg">
         <div className="flex flex-col gap-1">
-          <span className="font-label-caps text-label-caps text-primary uppercase tracking-widest">Administrative Chancery</span>
+          <span className="font-label-caps text-label-caps text-primary uppercase tracking-widest">Academy Administration</span>
           <h1 className="font-headline-md text-headline-md text-text-primary tracking-tight">Studio Settings</h1>
           <p className="font-body-muted text-body-muted text-text-secondary max-w-3xl">
             Workspace, billing and team preferences will be configured here. This screen is not designed yet — use the shortcuts below in the meantime.

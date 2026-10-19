@@ -1,5 +1,9 @@
+export type CourseFormat = "video" | "ebook" | "bundle";
+
 export type CategoryKey =
   | "all"
+  | "video"
+  | "ebook"
   | "work"
   | "bluecard"
   | "chancenkarte"
@@ -18,8 +22,11 @@ export interface CourseSummary {
   /** Short category badge shown on the card image. */
   badge: string;
   categories: CategoryKey[];
-  /** Statute / regulation reference shown above the title. */
+  /** Regulation or guide reference shown above the title. */
   reference: string;
+  format?: CourseFormat;
+  formatLabel?: string;
+  pageCount?: number;
   rating: number;
   reviewCount: number;
   moduleCount: number;

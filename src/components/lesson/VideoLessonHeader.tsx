@@ -29,7 +29,7 @@ export function VideoLessonHeader({ lesson, nextHref }: { lesson: Lesson; nextHr
             <Icon className="text-[14px]" name="videocam" /> {lesson.duration}
           </span>
           <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-level-2 text-text-secondary font-label-code text-[0.6875rem]">
-            <Icon className="text-[14px] text-primary" name="gavel" /> {lesson.statutes}
+            <Icon className="text-[14px] text-primary" name="menu_book" /> {lesson.statutes}
           </span>
           <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-level-2 text-text-muted font-label-code text-[0.6875rem]">
             <Icon className="text-[14px] text-status-success" name="verified" /> {lesson.verified}

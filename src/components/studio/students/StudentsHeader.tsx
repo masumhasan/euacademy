@@ -5,13 +5,13 @@ export function StudentsHeader() {
     <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-space-md pb-space-lg">
       <div className="flex flex-col">
         <div className="flex items-center gap-space-xs mb-1">
-          <span className="font-label-caps text-label-caps text-primary uppercase tracking-widest">Administrative Chancery</span>
+          <span className="font-label-caps text-label-caps text-primary uppercase tracking-widest">Academy Administration</span>
           <span className="text-text-muted text-xs">•</span>
-          <span className="font-label-code text-label-code text-text-secondary">Chamber Reference ID: 2026-CH-99</span>
+          <span className="font-label-code text-label-code text-text-secondary">Reference ID: EUA-2026-REG</span>
         </div>
         <h1 className="font-headline-md text-headline-md text-text-primary tracking-tight">Students Management</h1>
         <p className="font-body-muted text-body-muted text-text-secondary max-w-3xl mt-0.5">
-          Audit applicant dossier progression, active enrollments, statutory filings, and cross-border Payoneer settlements under EU VAT compliance
+          Audit applicant dossier progression, active enrollments, course completions, and cross-border Payoneer settlements under EU VAT compliance
           directives.
         </p>
       </div>

@@ -13,14 +13,14 @@ const BADGES = [
   { title: "Consular Checklist Vetted", text: "Audited against 2026 Auslandsportal APIs" },
 ];
 const STATUSES = [
-  { label: "Draft (Internal Jurist Review)", dot: "bg-status-warning", checked: true },
+  { label: "Draft (Internal Quality Review)", dot: "bg-status-warning", checked: true },
   { label: "Published (Live in Catalog)", dot: "bg-status-success", checked: false },
   { label: "Scheduled Launch", dot: "bg-secondary", checked: false },
 ];
 const ACCESS = [
   "Public in Marketplace (Self-Enrollment)",
   "Invite Only / Private Enterprise Cohort",
-  "Restricted to Retained Law Firm Clients",
+  "Restricted to Premium Enrolled Clients",
 ];
 
 export function VisualAssetCard() {
@@ -128,12 +128,12 @@ export function StatusCard() {
       </Field>
       <div className="pt-2 border-t border-surface-container-high/60 flex items-center justify-between">
         <div className="flex flex-col pr-2">
-          <span className="font-label-interactive text-label-interactive text-text-primary text-sm">§ 2 RDG Statutory Notice</span>
+          <span className="font-label-interactive text-label-interactive text-text-primary text-sm">Educational Platform Notice</span>
           <span className="font-body-muted text-body-muted text-text-secondary text-xs">
-            Append German Legal Services Act disclaimer automatically
+            Append non-law firm educational &amp; advisory disclaimer automatically
           </span>
         </div>
-        <Toggle defaultChecked label="Append RDG statutory notice" size="sm" />
+        <Toggle defaultChecked label="Append non-law firm educational notice" size="sm" />
       </div>
     </div>
   );

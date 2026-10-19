@@ -11,7 +11,7 @@ export function OutcomeCards({ outcomes }: { outcomes: OverviewOutcome[] }) {
           </span>
           <h3 className="font-headline-md text-headline-md text-text-primary mt-1">What you will be able to do</h3>
         </div>
-        <span className="hidden sm:inline font-label-code text-[0.75rem] text-text-muted">Direct chancery mastery</span>
+        <span className="hidden sm:inline font-label-code text-[0.75rem] text-text-muted">Direct practical mastery</span>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-space-md">
         {outcomes.map((outcome, index) => (

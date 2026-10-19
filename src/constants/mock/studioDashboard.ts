@@ -7,7 +7,7 @@ export const STUDIO_DASHBOARD = {
       trend: { icon: "trending_up", text: "+18.4% vs last mo" },
       footer: [
         { label: "Payoneer:", value: "€41,200", valueClass: "text-text-primary" },
-        { label: "Escrow Rail:", value: "€12,450", valueClass: "text-gold-highlight" },
+        { label: "Direct Rail:", value: "€12,450", valueClass: "text-gold-highlight" },
       ],
     },
     {
@@ -22,7 +22,7 @@ export const STUDIO_DASHBOARD = {
       label: "Registered Students",
       icon: "badge",
       value: "1,420",
-      note: "Juridical Applicants",
+      note: "Visa Applicants",
       badge: { label: "Auslandsportal Track", value: "312 active" },
     },
     {
@@ -33,11 +33,11 @@ export const STUDIO_DASHBOARD = {
       plain: { label: "Global Industry Std: ", value: "14.0%" },
     },
     {
-      label: "Jurist Advisory SLA",
-      icon: "gavel",
+      label: "Support Advisory SLA",
+      icon: "support_agent",
       value: "2h 15m",
       trend: { icon: "check_circle", text: "99.1% within 4h SLA" },
-      split: { label: "Statutory Target", value: "< 4h 00m" },
+      split: { label: "Response Target", value: "< 4h 00m" },
     },
   ],
   periods: ["30D", "90D", "12M", "YTD"],

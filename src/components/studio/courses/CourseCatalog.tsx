@@ -11,12 +11,12 @@ import {
 import { CourseRow } from "./CourseRow";
 
 const TABLE_HEADERS = [
-  "Masterclass & Jurist Overview",
-  "Legal Domain",
+  "Masterclass & Instructor Overview",
+  "Topic Domain",
   "Curriculum Depth",
   "Enrollments",
   "Pricing & Gross",
-  "Statutory Version",
+  "Curriculum Version",
   "Actions",
 ];
 
@@ -75,7 +75,7 @@ export function CourseCatalog() {
               aria-label="Search courses"
               className="w-full bg-surface-level-2 text-text-primary placeholder-text-muted pl-9 pr-space-md py-2 rounded-lg font-body-default text-body-default focus:outline-none focus:bg-surface-elevated transition-colors shadow-inner"
               onChange={(event) => setQuery(event.target.value)}
-              placeholder="Search courses by name, legal statute, or author..."
+              placeholder="Search courses by name, topic, or author..."
               type="text"
               value={query}
             />
@@ -83,7 +83,7 @@ export function CourseCatalog() {
         </div>
         <div className="flex items-center gap-space-xs flex-wrap pt-2">
           <span className="font-label-caps text-label-caps text-text-muted uppercase tracking-wider mr-1">
-            Statutory Clusters:
+            Topic Clusters:
           </span>
           {STATUTORY_CLUSTERS.map((cluster) => {
             const active = clusters.includes(cluster);
