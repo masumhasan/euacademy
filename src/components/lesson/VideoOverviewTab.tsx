@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Icon } from "@/components/ui/Icon";
 import { cn } from "@/lib/cn";
 import type { VIDEO_LESSON } from "@/constants/mock/videoLesson";
@@ -6,7 +5,7 @@ import type { VIDEO_LESSON } from "@/constants/mock/videoLesson";
 type Lesson = typeof VIDEO_LESSON;
 
 export function VideoOverviewTab({ lesson }: { lesson: Lesson }) {
-  const { briefing, instructor, nextUp } = lesson;
+  const { briefing, nextUp } = lesson;
   return (
     <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
       <div className="lg:col-span-8 flex flex-col gap-space-lg">
@@ -103,26 +102,6 @@ export function VideoOverviewTab({ lesson }: { lesson: Lesson }) {
       </div>
 
       <div className="lg:col-span-4 flex flex-col gap-space-lg">
-        <div className="p-space-md rounded-xl bg-surface-level-2 flex flex-col gap-space-md">
-          <div className="flex items-center justify-between">
-            <span className="font-label-caps text-label-caps text-primary uppercase">Lead Instructor</span>
-            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-elevated text-status-success font-label-code text-[0.6875rem]">
-              <span className="w-1.5 h-1.5 rounded-full bg-status-success" /> Verified Faculty
-            </span>
-          </div>
-          <div className="flex items-center gap-space-md">
-            <div className="w-14 h-14 rounded-full bg-surface-elevated overflow-hidden flex-shrink-0 relative">
-              <Image alt={instructor.name} className="object-cover" fill sizes="56px" src={instructor.avatar} />
-            </div>
-            <div className="flex flex-col">
-              <h4 className="font-title-card text-title-card text-text-primary">{instructor.name}</h4>
-              <p className="font-body-muted text-body-muted text-text-secondary text-[0.8125rem]">{instructor.role}</p>
-              <span className="font-label-code text-[0.6875rem] text-primary mt-0.5">{instructor.bar}</span>
-            </div>
-          </div>
-          <p className="font-body-muted text-[0.8125rem] text-text-muted">{instructor.bio}</p>
-        </div>
-
         <div className="p-space-md rounded-xl bg-surface-level-2 flex flex-col gap-space-sm">
           <div className="flex items-center justify-between mb-1">
             <span className="font-label-caps text-label-caps text-text-muted uppercase">Lesson Attachments</span>
