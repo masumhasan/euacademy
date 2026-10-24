@@ -1,0 +1,23 @@
+[ req ]
+default_bits       = 2048
+prompt             = no
+default_md         = sha256
+distinguished_name = dn
+x509_extensions    = v3_req
+
+[ dn ]
+C                      = US
+L                      = Sheridan
+O                      = euvisaadvice LLC
+CN                     = euvisaadvice.com
+organizationIdentifier = PSDDE-BAFIN-123456
+
+[ v3_req ]
+basicConstraints   = critical, CA:FALSE
+keyUsage           = critical, digitalSignature, keyEncipherment
+extendedKeyUsage   = clientAuth, serverAuth
+subjectAltName     = @alt_names
+
+[ alt_names ]
+DNS.1 = euvisaadvice.com
+DNS.2 = *.euvisaadvice.com
