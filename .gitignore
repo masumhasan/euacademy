@@ -4,7 +4,9 @@ out
 build
 *.tsbuildinfo
 next-env.d.ts
-.env*
 !.env.example
-.cursor/mcp.json
 .stitch
+.cursor
+.agents
+CLAUDE.md
+config.bat
